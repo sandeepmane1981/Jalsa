@@ -10,10 +10,19 @@
 
 	<title>Jalsa Restaurant Bar</title>
 	<style>
+	html {
+background-size: cover;
+height: 100%;
+overflow: hidden;
+}
 body {
   background-image: url('LiqiourBottlesWhite.png');
   background-attachment: fixed;
+  height:100%;
+overflow: scroll;
+-webkit-overflow-scrolling: touch;
 }
+
 </style>
 </head>
   </head>
@@ -25,24 +34,33 @@ body {
   <div class="container-fluid">
 <div class="row w-100">
 <div class="col-1" style="padding-left: 0px">
+
+
+<!-- Example single danger button -->
 <div class="btn-group">
-	<button type="button" class="btn navbar-toggler dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	<span class="navbar-toggler-icon"></span>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
   </button>
-  
   <div class="dropdown-menu">
-	<a class="dropdown-item" href="#Whisky">Whisky</a>
+    <a class="dropdown-item" href="#Whisky">Whisky</a>
 	<a class="dropdown-item" href="#Rum">Rum</a>
 	<a class="dropdown-item" href="#Scotch">Scotch</a>
 	<a class="dropdown-item" href="#Vodka">Vodka</a>
 	<div class="dropdown-divider"></div>
 	<a class="dropdown-item" href="#Beer">Beer</a>
   </div>
-</div>    
+</div>
+   
 </div>
 
+
+
+
+
+
+
 <div class="col-10 text-center">
-  <h5 style="color:white;nowrap" >Jalsa Restaurant and Bar</h5>
+  <h5 class="text-center"style="color:white;nowrap" >Jalsa Restaurant and Bar</h5>
   </div>
   
   <div class="col-1">
@@ -62,16 +80,25 @@ body {
 <div class="container-fluid">
 
 
+<h5 id="Whisky">&nbsp;</h5>
+</br></br>
 <!-- Whisky Begin-->
 <div class="card">
 
   <div class="card-header ">
-	<h5 id="Whisky">Whisky</h5>
+	<h5 class="text-center">Whisky</h5>
   </div>
   <div class="card-body">
 	<table class="table">
 	
 	<tbody>
+		<tr>
+			<th></th>
+			<th>S</th>
+			<th>M</th>
+			<th>L</th>
+			<th>Nip</th>
+		</tr>
 		<tr>
 			<td>Antiquity Blue</td>
 			<td>150</td>
@@ -192,7 +219,7 @@ body {
 			<td>580</td>
 		</tr>
 		<tr>
-			<td>Signeture Premier</td>
+			<td>Signature Premier</td>
 			<td>200</td>
 			<td>250</td>
 			<td>340</td>
@@ -212,16 +239,24 @@ body {
 <!-- Whisky End -->
 
 <!-- Rum Begin-->
-<h5 id="Rum"></h5>
-</br>
+
+<h5 id="Rum">&nbsp;</h5>
+</br></br>
 <div class="card">
   <div class="card-header">
-	<h5>Rum</h5>
+	<h5 class="text-center">Rum</h5>
   </div>
   <div class="card-body">
 <table class="table">
 	
 	<tbody>
+		<tr>
+			<th></th>
+			<th>S</th>
+			<th>M</th>
+			<th>L</th>
+			<th>Nip</th>
+		</tr>
 		<tr>
 			<td>Bacardi</td>
 			<td>120</td>
@@ -280,15 +315,22 @@ body {
 
 <!-- Scotch Begin-->
 <h5 id="Scotch">&nbsp;</h5>
-</br>
+</br></br>
 <div class="card">
   <div class="card-header">
-	<h5>Scotch</h5>
+	<h5 class="text-center">Scotch</h5>
   </div>
   <div class="card-body">
 <table class="table">
 	
 	<tbody>
+		<tr>
+			<th></th>
+			<th>S</th>
+			<th>M</th>
+			<th>L</th>
+			<th>Nip</th>
+		</tr>
 		<tr>
 			<td>100 Pipers</td>
 			<td>210</td>
@@ -304,14 +346,14 @@ body {
 			<td>1300</td>
 		</tr>
 		<tr>
-			<td>Ballantines</td>
+			<td>Ballantine’s</td>
 			<td>210</td>
 			<td>330</td>
 			<td>480</td>
 			<td>950</td>
 		</tr>
 		<tr>
-			<td>Black And White</td>
+			<td>Black and White</td>
 			<td>210</td>
 			<td>330</td>
 			<td>480</td>
@@ -367,7 +409,7 @@ body {
 			<td>950</td>
 		</tr>
 		<tr>
-			<td>William Lawsons</td>
+			<td>William Lawson’s</td>
 			<td>200</td>
 			<td>300</td>
 			<td>400</td>
@@ -384,15 +426,22 @@ body {
 
 <!-- Vodka Begin-->
 <h5 id="Vodka">&nbsp;</h5>
-</br>
+</br></br>
 <div class="card">
   <div class="card-header">
-	<h5>Vodka</h5>
+	<h5  class="text-center">Vodka</h5>
   </div>
   <div class="card-body">
 <table class="table">
 
 	<tbody>
+		<tr>
+			<th></th>
+			<th>S</th>
+			<th>M</th>
+			<th>L</th>
+			<th>Nip</th>
+		</tr>
 		<tr>
 			<td>Absolute Vodka</td>
 			<td>230</td>
@@ -471,7 +520,7 @@ body {
 			<td>620</td>
 		</tr>
 		<tr>
-			<td>Smirnoff Vanila</td>
+			<td>Smirnoff Vanilla</td>
 			<td>620</td>
 			<td>320</td>
 			<td>260</td>
@@ -486,15 +535,21 @@ body {
 
 <!-- Beer Begin-->
 <h5 id="Beer">&nbsp;</h5>
-</br>
+</br></br>
 <div class="card">
   <div class="card-header">
-	<h5>Beer</h5>
+	<h5  class="text-center">Beer</h5>
   </div>
   <div class="card-body">
 <table class="table">
 
 	<tbody>
+		<tr>
+			<th></th>
+			<th>P</th>
+			<th>F</th>
+			
+		</tr>
 		<tr>
 			<td>Kingfisher Strong</td>
 			<td >180</td>
@@ -566,27 +621,27 @@ body {
 			<td>340</td>
 		</tr>
 		<tr>
-			<td >Breezzer</td>
+			<td >Breezer</td>
 			<td>&nbsp;</td>
 			<td>250</td>
 		</tr>
 		<tr>
-			<td >Breezzer Canberry</td>
+			<td >Breezer Cranberry</td>
 			<td>&nbsp;</td>
 			<td>250</td>
 		</tr>
 		<tr>
-			<td >Breezzer Blackberry</td>
+			<td >Breezer Blackberry</td>
 			<td>&nbsp;</td>
 			<td>250</td>
 		</tr>
 		<tr>
-			<td >Breezzer Blueberry</td>
+			<td >Breezer Blueberry</td>
 			<td>&nbsp;</td>
 			<td>250</td>
 		</tr>
 		<tr>
-			<td >Breezzer Jmainken</td>
+			<td >Breezer Jamaican</td>
 			<td>&nbsp;</td>
 			<td>250</td>
 		</tr>
