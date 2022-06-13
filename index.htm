@@ -21,6 +21,7 @@
          overflow: scroll;
          -webkit-overflow-scrolling: touch;
          }
+		
          #myBtn {
          position: fixed;
          bottom: 20px;
@@ -30,54 +31,41 @@
          }
          }
       </style>
+
    </head>
    </head>
    <body>
-      <div class="pos-f-t">
-         <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-               <div class="row w-100">
-                  <div class="col-2" style="padding-left: 0px">
-                     <!-- Example single danger button -->
-                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                        </button>
-                        <div class="dropdown-menu">
-                           <a class="dropdown-item text-white bg-dark" href="#Whisky">Whisky</a>
-                           <a class="dropdown-item text-white bg-info href="#Rum">Rum</a>
-                           <a class="dropdown-item text-white bg-primary" href="#Scotch">Scotch</a>
-                           <a class="dropdown-item text-white bg-success" href="#Vodka">Vodka</a>
-                           <a class="dropdown-item text-white bg-secondary" href="#Beer">Beer</a>
-                           
-                           <a class="dropdown-item text-primary" href="#Cocktails">Cocktails</a>
-                           
-                           <a class="dropdown-item text-white bg-danger" href="#Starters">Starters</a>
-						<!--    <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="#Offers">Offers</a>
-						   <a class="dropdown-item" href="#Discounts">Discounts</a>
-						   <a class="dropdown-item" href="#Discounts">Contact</a> -->
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-10 text-center">
-                     <h5 class="text-center"style="color:white;nowrap" >Jalsa Restaurant and Bar</h5>
-                  </div>
-               </div>
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">Jalsa</a>
+ 
+			<div class="input-group col-10">
+				  <div class="input-group-prepend">
+					<button class="btn btn-outline-secondary text-white dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#Whisky">Whisky</a>
+						<a class="dropdown-item"  href="#Rum">Rum</a>
+						<a class="dropdown-item" href="#Scotch">Scotch</a>
+						<a class="dropdown-item" href="#Vodka">Vodka</a>
+						<a class="dropdown-item" href="#Beer">Beer</a>
+						<a class="dropdown-item" href="#Cocktails">Cocktails</a>
+						<a class="dropdown-item" href="#Starters">Starters</a>
+					</div>
+					</div>
+					<input type="text" id="searchMenu" onfocus="this.value=''" class="form-control" placeholder="Search" aria-label="Search">
+			</div>
+				   
             </div>
-      </div>
-      </nav>
-      <!-- Example single danger button -->
-      </div>
-      </br>
+	</nav>
+
+    
+      
 	  
 
 	  
-      <div class="container-fluid">
-         <h5 id="Whisky">&nbsp;</h5>
-         </br></br>
+      <div id="mainDiv" class="container-fluid">
+           </br>     </br>    
          <!-- Whisky Begin-->
-         <div class="card text-white bg-dark">
+         <div class="card mt-4 text-white bg-dark">
             <div class="card-header ">
                <h5 class="text-center">Whisky</h5>
             </div>
@@ -226,13 +214,14 @@
                      </tr>
                   </tbody>
                </table>
+			   <a id="Rum"></a>    
             </div>
          </div>
          <!-- Whisky End -->
          <!-- Rum Begin-->
-         <h5 id="Rum">&nbsp;</h5>
-         </br></br>
-         <div class="card text-white bg-info">
+       
+         
+         <div class="card mt-4 text-white bg-info">
             <div class="card-header">
                <h5 class="text-center">Rum</h5>
             </div>
@@ -297,13 +286,14 @@
                      </tr>
                   </tbody>
                </table>
+			   <a id="Scotch"></a>    
             </div>
          </div>
          <!-- Rum End -->
          <!-- Scotch Begin-->
-         <h5 id="Scotch">&nbsp;</h5>
-         </br></br>
-         <div class="card text-white bg-primary">
+       
+         
+         <div class="card mt-4 text-white bg-primary">
             <div class="card-header">
                <h5 class="text-center">Scotch</h5>
             </div>
@@ -403,13 +393,14 @@
                      </tr>
                   </tbody>
                </table>
+			   <a id="Vodka"></a>    
             </div>
          </div>
          <!-- Scotch End -->
          <!-- Vodka Begin-->
-         <h5 id="Vodka">&nbsp;</h5>
-         </br></br>
-         <div class="card text-white bg-success">
+        
+         
+         <div class="card mt-4 text-white bg-success">
             <div class="card-header">
                <h5  class="text-center">Vodka</h5>
             </div>
@@ -509,13 +500,14 @@
                      </tr>
                   </tbody>
                </table>
+			   <a id="Beer"></a>    
             </div>
          </div>
          <!-- Vodka End -->
          <!-- Beer Begin-->
-         <h5 id="Beer">&nbsp;</h5>
-         </br></br>
-         <div class="card text-white bg-secondary">
+        
+         
+         <div class="card mt-4 text-white bg-secondary">
             <div class="card-header">
                <h5  class="text-center">Beer</h5>
             </div>
@@ -659,14 +651,15 @@
                      </tr>
                   </tbody>
                </table>
+			   <a id="Cocktails"></a>    
             </div>
          </div>
          <!-- Beer End -->
 		 
       <!-- Cocktails Begin-->
-      <h5 id="Cocktails">&nbsp;</h5>
-      </br></br>
-      <div class="card">
+     
+      
+      <div class="card mt-4">
          <div class="card-header">
             <h5  class="text-center">Cocktails & Mocktails</h5>
          </div>
@@ -684,8 +677,7 @@
                      </td>
                      <td >
                         490
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -696,8 +688,7 @@
                      </td>
                      <td >
                         390
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -708,8 +699,7 @@
                      </td>
                      <td >
                         290
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -720,8 +710,7 @@
                      </td>
                      <td >
                         440
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -732,20 +721,18 @@
                      </td>
                      <td >
                         470
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
                      <td Class="text-primary">
-                        Whiskey Sour
-                        <p Class="text-muted small"><em>Whiskey, Egg White Or Pineapple Juice, S & S Mix
+                        Whisky Sour
+                        <p Class="text-muted small"><em>Whisky, Egg White Or Pineapple Juice, S & S Mix
                         <p><em>
                      </td>
                      <td >
                         290
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -756,20 +743,18 @@
                      </td>
                      <td >
                         310
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
                      <td Class="text-primary">
                         Mint Julep
-                        <p Class="text-muted small"><em>Whiskey, Mint Leafs & S & S Mix
+                        <p Class="text-muted small"><em>Whisky, Mint Leafs & S & S Mix
                         <p><em>
                      </td>
                      <td >
                         290
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -780,8 +765,7 @@
                      </td>
                      <td >
                         290
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -792,8 +776,7 @@
                      </td>
                      <td >
                         320
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -923,12 +906,12 @@
                      </td>
                   </tr>
                   <tr>
-                     <td Class="text-primary text-center" colspan=2>WHISKEY Based</td>
+                     <td Class="text-primary text-center" colspan=2>WHISKY Based</td>
                   </tr>
                   <tr>
                      <td Class="text-primary">
                         Summer Rocket
-                        <p Class="text-muted small"><em>Whiskey, Banana Crush
+                        <p Class="text-muted small"><em>Whisky, Banana Crush
                         <p><em>
                      </td>
                      <td >
@@ -939,8 +922,8 @@
                   </tr>
                   <tr>
                      <td Class="text-primary">
-                        Pinaberry Whiskey
-                        <p Class="text-muted small"><em>Whiskey, Pineapple Juice, Strawberry Crush
+                        Pinaberry Whisky
+                        <p Class="text-muted small"><em>Whisky, Pineapple Juice, Strawberry Crush
                         <p><em>
                      </td>
                      <td >
@@ -952,7 +935,7 @@
                   <tr>
                      <td Class="text-primary">
                         Alpha Century
-                        <p Class="text-muted small"><em>Whiskey, Mango Juice, Chat Masala
+                        <p Class="text-muted small"><em>Whisky, Mango Juice, Chat Masala
                         <p><em>
                      </td>
                      <td >
@@ -964,7 +947,7 @@
                   <tr>
                      <td Class="text-primary">
                         Blue Hotty
-                        <p Class="text-muted small"><em>Whiskey, Blue Curacao, Coconut Powder & Pineapple
+                        <p Class="text-muted small"><em>Whisky, Blue Curacao, Coconut Powder & Pineapple
                         <p><em>
                      </td>
                      <td >
@@ -976,7 +959,7 @@
                   <tr>
                      <td Class="text-primary">
                         Vampire Embarrassed
-                        <p Class="text-muted small"><em>Whiskey, Cinnamon Syrup & Cinnamon Stick
+                        <p Class="text-muted small"><em>Whisky, Cinnamon Syrup & Cinnamon Stick
                         <p><em>
                      </td>
                      <td >
@@ -1003,7 +986,7 @@
                   <tr>
                      <td Class="text-primary">
                         W Square
-                        <p Class="text-muted small"><em>White Wine, Whiskey, Lemonade
+                        <p Class="text-muted small"><em>White Wine, Whisky, Lemonade
                         <p><em>
                      </td>
                      <td >
@@ -1318,7 +1301,7 @@
                   <tr>
                      <td Class="text-primary">
                         Energetic Jalsa
-                        <p Class="text-muted small"><em>Vodka, Gin, Whiskey, White Rum, Dark Rum, Spicy Lemonade Syrup, Top It Up With Lemonade
+                        <p Class="text-muted small"><em>Vodka, Gin, Whisky, White Rum, Dark Rum, Spicy Lemonade Syrup, Top It Up With Lemonade
                         <p><em>
                      </td>
                      <td >
@@ -1330,7 +1313,7 @@
                   <tr>
                      <td Class="text-primary">
                         Bunny da Iced Tea
-                        <p Class="text-muted small"><em>Vodka, Gin, White Rum, Whiskey, Tequila, Grenadine Syrup, Craneberry Juice, Black Salt
+                        <p Class="text-muted small"><em>Vodka, Gin, White Rum, Whisky, Tequila, Grenadine Syrup, Craneberry Juice, Black Salt
                         <p><em>
                      </td>
                      <td >
@@ -1347,14 +1330,13 @@
                      </td>
                      <td >
                         540
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
                      <td Class="text-primary">
                         Kala Khatta Iced Tea
-                        <p Class="text-muted small"><em>Gin, Vodka, White Rum, Whiskey, Dark Rum , Kala khatta syrup, chat masala, top it up with cola
+                        <p Class="text-muted small"><em>Gin, Vodka, White Rum, Whisky, Dark Rum , Kala khatta syrup, chat masala, top it up with cola
                         <p><em>
                      </td>
                      <td >
@@ -1366,13 +1348,12 @@
                   <tr>
                      <td Class="text-primary">
                         Summer Iced Tea
-                        <p Class="text-muted small"><em>Gin, Vodka, Whiskey, White Rum, Kokum Syrup, Chat Masala Top It Up With Sparkling Water
+                        <p Class="text-muted small"><em>Gin, Vodka, Whisky, White Rum, Kokum Syrup, Chat Masala Top It Up With Sparkling Water
                         <p><em>
                      </td>
                      <td >
                         490
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1386,8 +1367,7 @@
                      </td>
                      <td >
                         490
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1398,8 +1378,7 @@
                      </td>
                      <td >
                         390
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1410,8 +1389,7 @@
                      </td>
                      <td >
                         440
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1422,8 +1400,7 @@
                      </td>
                      <td >
                         440
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1437,8 +1414,7 @@
                      </td>
                      <td >
                         490
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1452,8 +1428,7 @@
                      </td>
                      <td >
                         190
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1464,8 +1439,7 @@
                      </td>
                      <td >
                         140
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1476,8 +1450,7 @@
                      </td>
                      <td >
                         190
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1488,8 +1461,7 @@
                      </td>
                      <td >
                         170
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1500,8 +1472,7 @@
                      </td>
                      <td >
                         140
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1512,8 +1483,7 @@
                      </td>
                      <td >
                         140
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1524,8 +1494,7 @@
                      </td>
                      <td >
                         140
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1536,8 +1505,7 @@
                      </td>
                      <td >
                         190
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1548,8 +1516,7 @@
                      </td>
                      <td >
                         140
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1560,8 +1527,7 @@
                      </td>
                      <td >
                         140
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
                   <tr>
@@ -1572,21 +1538,23 @@
                      </td>
                      <td >
                         190
-                        <p Class="text-muted small"><em>
-                        <p><em>
+                        
                      </td>
                   </tr>
-                  <tr>
+             
                </tbody>
+			   
             </table>
+			 <a id="Starters"></a>       
          </div>
       </div>
+	</div>  
       <!-- Cocktails End -->
 		 
          <!-- Starters Begin-->
-         <h5 id="Starters">&nbsp;</h5>
-         </br></br>
-         <div class="card">
+     
+         
+         <div  class="card mt-4">
             <div class="card-header">
                <h5  class="text-center">Starters</h5>
             </div>
@@ -2046,21 +2014,7 @@
       </a>
       <!-- Optional JavaScript -->
       <script>
-         //Get the button
-         var mybutton = document.getElementById("myBtn");
          
-         // When the user scrolls down 20px from the top of the document, show the button
-         window.onscroll = function() {scrollFunction()};
-         
-         function scrollFunction() {
-         
-         
-           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-             mybutton.style.display = "block";
-           } else {
-             mybutton.style.display = "none";
-           }
-         }
          
          // When the user clicks on the button, scroll to the top of the document
          function topFunction() {
@@ -2068,6 +2022,31 @@
            document.documentElement.scrollTop = 0;
          }
       </script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  
+			  $("#searchMenu").on("keyup focus", function() 	{
+														var value = $(this).val().toLowerCase();
+														$("tr").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) });
+														
+
+			$( "div.card" ).each(function( i ) {
+				console.log($(this).height());
+				if($(this).height() == 113)
+				{
+				$(this).hide();
+				}
+				else{
+				$(this).show();
+				}
+				});
+														
+														});
+										});
+			
+
+		</script>
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
