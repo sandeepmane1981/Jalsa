@@ -31,6 +31,37 @@
          }
          }
       </style>
+<style>
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+</style>
+
 
    </head>
    </head>
@@ -51,9 +82,11 @@
 						<a class="dropdown-item" href="#Beer">Beer</a>
 						<a class="dropdown-item" href="#Cocktails">Cocktails</a>
 						<a class="dropdown-item" href="#Starters">Starters</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item animate-charcter" data-toggle="modal" data-target="#Offers">Offers</a>
 					</div>
 					</div>
-					<input type="text" id="searchMenu" onfocus="resetSearchInput();" class="form-control" placeholder="Search" aria-label="Search">
+					<input type="text" id="searchMenu" onfocus="resetSearchInput();" class="form-control" placeholder="Search here" aria-label="Search">
 			</div>
 				   
             </div>
@@ -2009,6 +2042,34 @@
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
          </svg>
       </a>
+	  
+	        <!-- Modal Add New Party-->
+      <div class="modal fade" id="Offers" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Offers and Discounts</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <h4 class="animate-charcter">Owner's Birthay Offer</h4></br>
+				  BUY 180ML GET 30ML FREE</br>
+				  BUY 3 Beer GET 1 Beer FREE
+				  <footer class="blockquote-footer">Offer valid any brand</cite></footer>
+				  <footer class="blockquote-footer">Offer valid only for <strong class="animate-charcter">25th June and 1st July</strong></cite></footer>
+				  <footer class="blockquote-footer">Need to buy Nip or 3 Beers first. No Sum up</cite></footer>
+				  <footer class="blockquote-footer">Owner has rights to change or deny offer</cite></footer>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+	  
       <!-- Optional JavaScript -->
       <script>
          
