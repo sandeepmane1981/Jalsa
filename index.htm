@@ -21,7 +21,6 @@
          overflow: scroll;
          -webkit-overflow-scrolling: touch;
          }
-		
          #myBtn {
          position: fixed;
          bottom: 20px;
@@ -31,69 +30,61 @@
          }
          }
       </style>
-<style>
-.animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-</style>
-
-
+      <style>
+         .animate-charcter
+         {
+         text-transform: uppercase;
+         background-image: linear-gradient(
+         -225deg,
+         #231557 0%,
+         #44107a 29%,
+         #ff1361 67%,
+         #fff800 100%
+         );
+         background-size: auto auto;
+         background-clip: border-box;
+         background-size: 200% auto;
+         color: #fff;
+         background-clip: text;
+         text-fill-color: transparent;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         animation: textclip 2s linear infinite;
+         display: inline-block;
+         }
+         @keyframes textclip {
+         to {
+         background-position: 200% center;
+         }
+         }
+      </style>
    </head>
    </head>
    <body>
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="#">Jalsa</a>
- 
-			<div class="input-group col-10">
-				  <div class="input-group-prepend">
-					<button class="btn btn-outline-secondary text-white dropdown-toggle" 
-					onclick="resetSearchInput();" 
-					type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#mainDiv">Whisky</a>
-						<a class="dropdown-item" href="#Rum">Rum</a>
-						<a class="dropdown-item" href="#Scotch">Scotch</a>
-						<a class="dropdown-item" href="#Vodka">Vodka</a>
-						<a class="dropdown-item" href="#Beer">Beer</a>
-						<a class="dropdown-item" href="#Cocktails">Cocktails</a>
-						<a class="dropdown-item" href="#Starters">Starters</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item animate-charcter" data-toggle="modal" data-target="#Offers">Offers</a>
-					</div>
-					</div>
-					<input type="text" id="searchMenu" onfocus="resetSearchInput();" class="form-control" placeholder="Search here" aria-label="Search">
-			</div>
-				   
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="#">Jalsa</a>
+         <div class="input-group col-10">
+            <div class="input-group-prepend">
+               <button class="btn btn-outline-secondary text-white dropdown-toggle" 
+                  onclick="resetSearchInput();" 
+                  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#mainDiv">Whisky</a>
+                  <a class="dropdown-item" href="#Rum">Rum</a>
+                  <a class="dropdown-item" href="#Scotch">Scotch</a>
+                  <a class="dropdown-item" href="#Vodka">Vodka</a>
+                  <a class="dropdown-item" href="#Beer">Beer</a>
+                  <a class="dropdown-item" href="#Cocktails">Cocktails</a>
+                  <a class="dropdown-item" href="#Starters">Starters</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item animate-charcter" data-toggle="modal" data-target="#Offers">Offers</a>
+               </div>
             </div>
-	</nav>
-
+            <input type="text" id="searchMenu" onfocus="resetSearchInput();" class="form-control" placeholder="Search here" aria-label="Search">
+         </div>
+         </div>
+      </nav>
       <div id="mainDiv" class="container-fluid" style="padding-top: 50px">
-           
          <!-- Whisky Begin-->
          <div class="card mt-4 text-white bg-dark">
             <div class="card-header ">
@@ -244,13 +235,11 @@
                      </tr>
                   </tbody>
                </table>
-			   <a id="Rum"></a>    
+               <a id="Rum"></a>    
             </div>
          </div>
          <!-- Whisky End -->
          <!-- Rum Begin-->
-       
-         
          <div class="card mt-4 text-white bg-info">
             <div class="card-header">
                <h5 class="text-center">Rum</h5>
@@ -316,13 +305,11 @@
                      </tr>
                   </tbody>
                </table>
-			   <a id="Scotch"></a>    
+               <a id="Scotch"></a>    
             </div>
          </div>
          <!-- Rum End -->
          <!-- Scotch Begin-->
-       
-         
          <div class="card mt-4 text-white bg-primary">
             <div class="card-header">
                <h5 class="text-center">Scotch</h5>
@@ -423,13 +410,11 @@
                      </tr>
                   </tbody>
                </table>
-			   <a id="Vodka"></a>    
+               <a id="Vodka"></a>    
             </div>
          </div>
          <!-- Scotch End -->
          <!-- Vodka Begin-->
-        
-         
          <div class="card mt-4 text-white bg-success">
             <div class="card-header">
                <h5  class="text-center">Vodka</h5>
@@ -530,13 +515,11 @@
                      </tr>
                   </tbody>
                </table>
-			   <a id="Beer"></a>    
+               <a id="Beer"></a>    
             </div>
          </div>
          <!-- Vodka End -->
          <!-- Beer Begin-->
-        
-         
          <div class="card mt-4 text-white bg-secondary">
             <div class="card-header">
                <h5  class="text-center">Beer</h5>
@@ -681,1369 +664,1331 @@
                      </tr>
                   </tbody>
                </table>
-			   <a id="Cocktails"></a>    
+               <a id="Cocktails"></a>    
             </div>
          </div>
          <!-- Beer End -->
-		 
-      <!-- Cocktails Begin-->
-     
-      
-      <div class="card mt-4">
-         <div class="card-header">
-            <h5  class="text-center">Cocktails & Mocktails</h5>
-         </div>
-         <div class="card-body">
-            <table class="table">
-               <tbody>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>CLASSICS</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Long Island Iced Tea
-                        <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Orange Liquor , Cola E Lemon Wedges
-                        <p><em>
-                     </td>
-                     <td >
-                        490
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Cosmopolitan
-                        <p Class="text-muted small"><em>Vodka, Orange Liquor, Cranberry Juice
-                        <p><em>
-                     </td>
-                     <td >
-                        390
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Mojito
-                        <p Class="text-muted small"><em>White Rum, Mint Leafs, Lime Wedges & Sparkling Water
-                        <p><em>
-                     </td>
-                     <td >
-                        290
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Margarita
-                        <p Class="text-muted small"><em>Tequila, Orange Liquor, Lime Juice, Salt
-                        <p><em>
-                     </td>
-                     <td >
-                        440
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Negroni
-                        <p Class="text-muted small"><em>Gin, Campari, Sweet Vermouth
-                        <p><em>
-                     </td>
-                     <td >
-                        470
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Whisky Sour
-                        <p Class="text-muted small"><em>Whisky, Egg White Or Pineapple Juice, S & S Mix
-                        <p><em>
-                     </td>
-                     <td >
-                        290
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Pinacolada
-                        <p Class="text-muted small"><em>White Rum, Coconut Powder, Fresh Cream, Pineapple Juice
-                        <p><em>
-                     </td>
-                     <td >
-                        310
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Mint Julep
-                        <p Class="text-muted small"><em>Whisky, Mint Leafs & S & S Mix
-                        <p><em>
-                     </td>
-                     <td >
-                        290
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Moscow Mule
-                        <p Class="text-muted small"><em>Vodka, Lemon Wedges, S & S Mix
-                        <p><em>
-                     </td>
-                     <td >
-                        290
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Mai-Tai
-                        <p Class="text-muted small"><em>White & Dark Rum, Orange & Pineapple Juice, Almond Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        320
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>DARK RUM Based</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Citric Monkey
-                        <p Class="text-muted small"><em>Dark Rum, Orange & Pineapple Juice
-                        <p><em>
-                     </td>
-                     <td >
-                        230
-                        <p Class="text-muted small"><em>Sweet & strong fragrance
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Tropical Pirate
-                        <p Class="text-muted small"><em>Dark Rum, Banana Crush & Chips
-                        <p><em>
-                     </td>
-                     <td >
-                        230
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Sweet Cherry
-                        <p Class="text-muted small"><em>Dark Rum & Cherry
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Café Gorilla
-                        <p Class="text-muted small"><em>Dark Rum & Coffee
-                        <p><em>
-                     </td>
-                     <td >
-                        240
-                        <p Class="text-muted small"><em>Strong as coffee
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Sweety Nutty
-                        <p Class="text-muted small"><em>Dark Rum, Hazelnut Or Almond Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>WHITE RUM Based</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Drunkard Passion
-                        <p Class="text-muted small"><em>White Rum, Dark Rum & Passion Fruit Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        260
-                        <p Class="text-muted small"><em>Strong
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Blue Whirlpool
-                        <p Class="text-muted small"><em>White Rum, Blue Curacao & Black Salt
-                        <p><em>
-                     </td>
-                     <td >
-                        230
-                        <p Class="text-muted small"><em>Sweetish salted
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Maharaja Bardak
-                        <p Class="text-muted small"><em>White Rum, Indian Gooseberry , Cranberry Juice
-                        <p><em>
-                     </td>
-                     <td >
-                        240
-                        <p Class="text-muted small"><em>Sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        White Caribbean
-                        <p Class="text-muted small"><em>White Rum, Fresh Cream, Honey
-                        <p><em>
-                     </td>
-                     <td >
-                        240
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Cuban Rock
-                        <p Class="text-muted small"><em>White Rum, Pineapple Juice
-                        <p><em>
-                     </td>
-                     <td >
-                        220
-                        <p Class="text-muted small"><em>Sweet 'n' sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>WHISKY Based</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Summer Rocket
-                        <p Class="text-muted small"><em>Whisky, Banana Crush
-                        <p><em>
-                     </td>
-                     <td >
-                        260
-                        <p Class="text-muted small"><em>Sweetish
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Pinaberry Whisky
-                        <p Class="text-muted small"><em>Whisky, Pineapple Juice, Strawberry Crush
-                        <p><em>
-                     </td>
-                     <td >
-                        310
-                        <p Class="text-muted small"><em>Sweet & sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Alpha Century
-                        <p Class="text-muted small"><em>Whisky, Mango Juice, Chat Masala
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Tangy
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Blue Hotty
-                        <p Class="text-muted small"><em>Whisky, Blue Curacao, Coconut Powder & Pineapple
-                        <p><em>
-                     </td>
-                     <td >
-                        260
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Vampire Embarrassed
-                        <p Class="text-muted small"><em>Whisky, Cinnamon Syrup & Cinnamon Stick
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Indi spice
-                        <p Class="text-muted small"><em>Red/White Wine/Vodka/Gin, Grape/Orange Juice & Indian Spice
-                        <p><em>
-                     </td>
-                     <td >
-                        290
-                        <p Class="text-muted small"><em>Spicy flavor
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>WINE Based</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        W Square
-                        <p Class="text-muted small"><em>White Wine, Whisky, Lemonade
-                        <p><em>
-                     </td>
-                     <td >
-                        310
-                        <p Class="text-muted small"><em>Sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Fermented Pop
-                        <p Class="text-muted small"><em>Red/White Wine, Vodka/Gin, Cola/Lemonade
-                        <p><em>
-                     </td>
-                     <td >
-                        240
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Residual Sour
-                        <p Class="text-muted small"><em>White Wine, Sweet Vermouth, Orange Juice
-                        <p><em>
-                     </td>
-                     <td >
-                        240
-                        <p Class="text-muted small"><em>Sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Cherry Drop
-                        <p Class="text-muted small"><em>Red Wine, Vodka, Cherry Water
-                        <p><em>
-                     </td>
-                     <td >
-                        230
-                        <p Class="text-muted small"><em>Dry
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Turkish Rose
-                        <p Class="text-muted small"><em>White Wine, Gin, Grenadine & Lemonade
-                        <p><em>
-                     </td>
-                     <td >
-                        240
-                        <p Class="text-muted small"><em>Sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>Beer Based</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Gin Shandy
-                        <p Class="text-muted small"><em>Beer, Gin, Lemon Juice & Lemonade
-                        <p><em>
-                     </td>
-                     <td >
-                        410
-                        <p Class="text-muted small"><em>Sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Volcanic Rim
-                        <p Class="text-muted small"><em>Beer, Vodka, Chilly Sauce
-                        <p><em>
-                     </td>
-                     <td >
-                        420
-                        <p Class="text-muted small"><em>Spicy
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Bloody Cherry
-                        <p Class="text-muted small"><em>Beer, Vodka, Cherry Water & Cherry
-                        <p><em>
-                     </td>
-                     <td >
-                        410
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Bar Shooter
-                        <p Class="text-muted small"><em>Beer, Tequila, Mint
-                        <p><em>
-                     </td>
-                     <td >
-                        440
-                        <p Class="text-muted small"><em>Dry & minty
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Choco Beer
-                        <p Class="text-muted small"><em>Beer, Dark Rum, Chocolate Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        390
-                        <p Class="text-muted small"><em>Dry & strong
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>VODKA Based</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Iced Chilly
-                        <p Class="text-muted small"><em>Vodka, Pineapple & Pomegranate Juice With Green Chilly
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Little spicy
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Sama
-                        <p Class="text-muted small"><em>Vodka, Almond Or Hazelnut Syrup, Chocolate Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Lunar Victory
-                        <p Class="text-muted small"><em>Vodka, Fresh Cucumber & Thyme With S & S Mix
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Refreshing sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Summer & Winter
-                        <p Class="text-muted small"><em>Vodka, Orange Liquor & Orange Juice
-                        <p><em>
-                     </td>
-                     <td >
-                        390
-                        <p Class="text-muted small"><em>Little sour & dry
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Spicytiny
-                        <p Class="text-muted small"><em>Vodka, Indian Spice, Dash Of Chilly Sauce
-                        <p><em>
-                     </td>
-                     <td >
-                        210
-                        <p Class="text-muted small"><em>Spicy
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>Tequila</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Agave Cola
-                        <p Class="text-muted small"><em>Tequila, Lemon Wedge & Coke
-                        <p><em>
-                     </td>
-                     <td >
-                        420
-                        <p Class="text-muted small"><em>Sweet
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Fizzy Babaloush
-                        <p Class="text-muted small"><em>Tequila, Grape Juice, Tonic Water
-                        <p><em>
-                     </td>
-                     <td >
-                        490
-                        <p Class="text-muted small"><em>Dry sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Mexican Colada
-                        <p Class="text-muted small"><em>Tequila, Blue Curacao, Pineapple Juice & Coconut Powder
-                        <p><em>
-                     </td>
-                     <td >
-                        420
-                        <p Class="text-muted small"><em>Sweet & strong
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Black Dreamer
-                        <p Class="text-muted small"><em>Tequila & Coffee
-                        <p><em>
-                     </td>
-                     <td >
-                        410
-                        <p Class="text-muted small"><em>Dark coffee
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Mexican
-                        <p Class="text-muted small"><em>Tequila, Grape Juice, Grenadine
-                        <p><em>
-                     </td>
-                     <td >
-                        440
-                        <p Class="text-muted small"><em>Sweet & dry
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>GIN</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Giver
-                        <p Class="text-muted small"><em>Gin, Sweet Vermouth
-                        <p><em>
-                     </td>
-                     <td >
-                        290
-                        <p Class="text-muted small"><em>Sweetish dry
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Elevated Soul Lemon
-                        <p Class="text-muted small"><em>Gin & Energy Drink With Lime Slice
-                        <p><em>
-                     </td>
-                     <td >
-                        340
-                        <p Class="text-muted small"><em>Energetic
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Jalsa
-                        <p Class="text-muted small"><em>Gin, Vodka, Sweet Vermouth & Lemonade
-                        <p><em>
-                     </td>
-                     <td >
-                        320
-                        <p Class="text-muted small"><em>Sweet & strong
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Ginner Rock
-                        <p Class="text-muted small"><em>Gin, vodka, lemon juice & tonic water
-                        <p><em>
-                     </td>
-                     <td >
-                        340
-                        <p Class="text-muted small"><em>Sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Sweet Lady
-                        <p Class="text-muted small"><em>Gin, Orange Juice, Almond Syrup & Grenoline & Lemonade
-                        <p><em>
-                     </td>
-                     <td >
-                        290
-                        <p Class="text-muted small"><em>Sweet & sour
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>LONG DRINKS</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Energetic Jalsa
-                        <p Class="text-muted small"><em>Vodka, Gin, Whisky, White Rum, Dark Rum, Spicy Lemonade Syrup, Top It Up With Lemonade
-                        <p><em>
-                     </td>
-                     <td >
-                        540
-                        <p Class="text-muted small"><em>Spicy & strong
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Bunny da Iced Tea
-                        <p Class="text-muted small"><em>Vodka, Gin, White Rum, Whisky, Tequila, Grenadine Syrup, Craneberry Juice, Black Salt
-                        <p><em>
-                     </td>
-                     <td >
-                        530
-                        <p Class="text-muted small"><em>Sour & dry
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Blue Frog
-                        <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Blue Curacao, Strongest Energy Energy Drink
-                        <p><em>
-                     </td>
-                     <td >
-                        540
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Kala Khatta Iced Tea
-                        <p Class="text-muted small"><em>Gin, Vodka, White Rum, Whisky, Dark Rum , Kala khatta syrup, chat masala, top it up with cola
-                        <p><em>
-                     </td>
-                     <td >
-                        530
-                        <p Class="text-muted small"><em>Strong
-                        <p><em>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Summer Iced Tea
-                        <p Class="text-muted small"><em>Gin, Vodka, Whisky, White Rum, Kokum Syrup, Chat Masala Top It Up With Sparkling Water
-                        <p><em>
-                     </td>
-                     <td >
-                        490
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>SHOTS</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Jager Bomb
-                        <p Class="text-muted small"><em>Jagermeiser & Energy Drink
-                        <p><em>
-                     </td>
-                     <td >
-                        490
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Paan Shot
-                        <p Class="text-muted small"><em>Gin & Vodka, Paan Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        390
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        B-52
-                        <p Class="text-muted small"><em>Kahlua, Baileys, Orange Liquor
-                        <p><em>
-                     </td>
-                     <td >
-                        440
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Flaming Shot
-                        <p Class="text-muted small"><em>Sambuca, Dark Rum
-                        <p><em>
-                     </td>
-                     <td >
-                        440
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Jalsa Shot
-                        <p Class="text-muted small"><em>O3 Flavored Shots Made With Vodka, Gin & White Rum
-                        <footer class="blockquote-footer small text-center">
-                        Bartender's Special
-                        <footer>
-                        <p><em>
-                     </td>
-                     <td >
-                        490
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary text-center" colspan=2>MOCKTAILS</td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Citron sangria
-                        <p Class="text-muted small"><em>Grape & Orange Juice With Chopped Apple
-                        <p><em>
-                     </td>
-                     <td >
-                        190
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Refreshing king
-                        <p Class="text-muted small"><em>Mango Juice, Mint Leafs, Fresh Cream & Sugar Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        140
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Chatpata Anar
-                        <p Class="text-muted small"><em>Pomegranate Juice, Orange Juice With Chat Masala
-                        <p><em>
-                     </td>
-                     <td >
-                        190
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Guava smash
-                        <p Class="text-muted small"><em>Guava Juice, Chilly Sauce, Black Pepper, S & S Mix
-                        <p><em>
-                     </td>
-                     <td >
-                        170
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Blend lime
-                        <p Class="text-muted small"><em>Mint Leafs, Lime Juice, Sparkling Water, Sugar Syrup
-                        <p><em>
-                     </td>
-                     <td >
-                        140
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Red island
-                        <p Class="text-muted small"><em>Lemonade, Grenadine, Cherry
-                        <p><em>
-                     </td>
-                     <td >
-                        140
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Kiwi Garden
-                        <p Class="text-muted small"><em>Kiwi Crush, Fresh Kiwi, Sparkling Water, Chat Masala
-                        <p><em>
-                     </td>
-                     <td >
-                        140
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        5 Elements
-                        <p Class="text-muted small"><em>Mint, Lime Juice, Pomegranate Seeds, Sugar Syrup, Sparkling Water
-                        <p><em>
-                     </td>
-                     <td >
-                        190
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Orange Strawberry Splitzer
-                        <p Class="text-muted small"><em>Orange Juice, Strawberry Crush, Sparkling Water
-                        <p><em>
-                     </td>
-                     <td >
-                        140
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Iced Tea
-                        <p Class="text-muted small"><em>Lemon Or Peach
-                        <p><em>
-                     </td>
-                     <td >
-                        140
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td Class="text-primary">
-                        Iced Coffee
-                        <p Class="text-muted small"><em>Espresso Or Irish Cream With Milk
-                        <p><em>
-                     </td>
-                     <td >
-                        190
-                        
-                     </td>
-                  </tr>
-             
-               </tbody>
-			   
-            </table>
-			 <a id="Starters"></a>       
-         </div>
-      </div>
-	</div>  
-      <!-- Cocktails End -->
-		 
-         <!-- Starters Begin-->
-     
-         
-         <div  class="card mt-4">
+         <!-- Cocktails Begin-->
+         <div class="card mt-4">
             <div class="card-header">
-               <h5  class="text-center">Starters</h5>
+               <h5  class="text-center">Cocktails & Mocktails</h5>
             </div>
             <div class="card-body">
                <table class="table">
                   <tbody>
-                     <colgroup>
-                        <col class="col-md-10">
-                        <col class="col-md-2">
-                     </colgroup>
-                     <tr Class="text-danger">
-                        <td>
-                           Murg Makhrana Kabab 
-                           <footer class="blockquote-footer small text-center text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>CLASSICS</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Long Island Iced Tea
+                           <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Orange Liquor , Cola E Lemon Wedges
+                           <p><em>
                         </td>
-                        <td >290</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Koliwada</td>
-                        <td >240</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Dragon</td>
-                        <td >260</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Seekh Kabab</td>
-                        <td >350</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Tandoori</td>
-                        <td >500/260</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Jungli 
-                           <footer class="blockquote-footer small text-center ">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           490
                         </td>
-                        <td >240</td>
                      </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Rangila Kukkad 
+                     <tr>
+                        <td Class="text-primary">
+                           Cosmopolitan
+                           <p Class="text-muted small"><em>Vodka, Orange Liquor, Cranberry Juice
+                           <p><em>
+                        </td>
+                        <td >
+                           390
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Mojito
+                           <p Class="text-muted small"><em>White Rum, Mint Leafs, Lime Wedges & Sparkling Water
+                           <p><em>
+                        </td>
+                        <td >
+                           290
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Margarita
+                           <p Class="text-muted small"><em>Tequila, Orange Liquor, Lime Juice, Salt
+                           <p><em>
+                        </td>
+                        <td >
+                           440
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Negroni
+                           <p Class="text-muted small"><em>Gin, Campari, Sweet Vermouth
+                           <p><em>
+                        </td>
+                        <td >
+                           470
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Whisky Sour
+                           <p Class="text-muted small"><em>Whisky, Egg White Or Pineapple Juice, S & S Mix
+                           <p><em>
+                        </td>
+                        <td >
+                           290
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Pinacolada
+                           <p Class="text-muted small"><em>White Rum, Coconut Powder, Fresh Cream, Pineapple Juice
+                           <p><em>
+                        </td>
+                        <td >
+                           310
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Mint Julep
+                           <p Class="text-muted small"><em>Whisky, Mint Leafs & S & S Mix
+                           <p><em>
+                        </td>
+                        <td >
+                           290
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Moscow Mule
+                           <p Class="text-muted small"><em>Vodka, Lemon Wedges, S & S Mix
+                           <p><em>
+                        </td>
+                        <td >
+                           290
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Mai-Tai
+                           <p Class="text-muted small"><em>White & Dark Rum, Orange & Pineapple Juice, Almond Syrup
+                           <p><em>
+                        </td>
+                        <td >
+                           320
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>DARK RUM Based</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Citric Monkey
+                           <p Class="text-muted small"><em>Dark Rum, Orange & Pineapple Juice
+                           <p><em>
+                        </td>
+                        <td >
+                           230
+                           <p Class="text-muted small"><em>Sweet & strong fragrance
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Tropical Pirate
+                           <p Class="text-muted small"><em>Dark Rum, Banana Crush & Chips
+                           <p><em>
+                        </td>
+                        <td >
+                           230
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Sweet Cherry
+                           <p Class="text-muted small"><em>Dark Rum & Cherry
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Café Gorilla
+                           <p Class="text-muted small"><em>Dark Rum & Coffee
+                           <p><em>
+                        </td>
+                        <td >
+                           240
+                           <p Class="text-muted small"><em>Strong as coffee
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Sweety Nutty
+                           <p Class="text-muted small"><em>Dark Rum, Hazelnut Or Almond Syrup
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>WHITE RUM Based</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Drunkard Passion
+                           <p Class="text-muted small"><em>White Rum, Dark Rum & Passion Fruit Syrup
+                           <p><em>
+                        </td>
+                        <td >
+                           260
+                           <p Class="text-muted small"><em>Strong
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Blue Whirlpool
+                           <p Class="text-muted small"><em>White Rum, Blue Curacao & Black Salt
+                           <p><em>
+                        </td>
+                        <td >
+                           230
+                           <p Class="text-muted small"><em>Sweetish salted
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Maharaja Bardak
+                           <p Class="text-muted small"><em>White Rum, Indian Gooseberry , Cranberry Juice
+                           <p><em>
+                        </td>
+                        <td >
+                           240
+                           <p Class="text-muted small"><em>Sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           White Caribbean
+                           <p Class="text-muted small"><em>White Rum, Fresh Cream, Honey
+                           <p><em>
+                        </td>
+                        <td >
+                           240
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Cuban Rock
+                           <p Class="text-muted small"><em>White Rum, Pineapple Juice
+                           <p><em>
+                        </td>
+                        <td >
+                           220
+                           <p Class="text-muted small"><em>Sweet 'n' sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>WHISKY Based</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Summer Rocket
+                           <p Class="text-muted small"><em>Whisky, Banana Crush
+                           <p><em>
+                        </td>
+                        <td >
+                           260
+                           <p Class="text-muted small"><em>Sweetish
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Pinaberry Whisky
+                           <p Class="text-muted small"><em>Whisky, Pineapple Juice, Strawberry Crush
+                           <p><em>
+                        </td>
+                        <td >
+                           310
+                           <p Class="text-muted small"><em>Sweet & sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Alpha Century
+                           <p Class="text-muted small"><em>Whisky, Mango Juice, Chat Masala
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Tangy
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Blue Hotty
+                           <p Class="text-muted small"><em>Whisky, Blue Curacao, Coconut Powder & Pineapple
+                           <p><em>
+                        </td>
+                        <td >
+                           260
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Vampire Embarrassed
+                           <p Class="text-muted small"><em>Whisky, Cinnamon Syrup & Cinnamon Stick
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Indi spice
+                           <p Class="text-muted small"><em>Red/White Wine/Vodka/Gin, Grape/Orange Juice & Indian Spice
+                           <p><em>
+                        </td>
+                        <td >
+                           290
+                           <p Class="text-muted small"><em>Spicy flavor
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>WINE Based</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           W Square
+                           <p Class="text-muted small"><em>White Wine, Whisky, Lemonade
+                           <p><em>
+                        </td>
+                        <td >
+                           310
+                           <p Class="text-muted small"><em>Sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Fermented Pop
+                           <p Class="text-muted small"><em>Red/White Wine, Vodka/Gin, Cola/Lemonade
+                           <p><em>
+                        </td>
+                        <td >
+                           240
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Residual Sour
+                           <p Class="text-muted small"><em>White Wine, Sweet Vermouth, Orange Juice
+                           <p><em>
+                        </td>
+                        <td >
+                           240
+                           <p Class="text-muted small"><em>Sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Cherry Drop
+                           <p Class="text-muted small"><em>Red Wine, Vodka, Cherry Water
+                           <p><em>
+                        </td>
+                        <td >
+                           230
+                           <p Class="text-muted small"><em>Dry
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Turkish Rose
+                           <p Class="text-muted small"><em>White Wine, Gin, Grenadine & Lemonade
+                           <p><em>
+                        </td>
+                        <td >
+                           240
+                           <p Class="text-muted small"><em>Sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>Beer Based</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Gin Shandy
+                           <p Class="text-muted small"><em>Beer, Gin, Lemon Juice & Lemonade
+                           <p><em>
+                        </td>
+                        <td >
+                           410
+                           <p Class="text-muted small"><em>Sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Volcanic Rim
+                           <p Class="text-muted small"><em>Beer, Vodka, Chilly Sauce
+                           <p><em>
+                        </td>
+                        <td >
+                           420
+                           <p Class="text-muted small"><em>Spicy
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Bloody Cherry
+                           <p Class="text-muted small"><em>Beer, Vodka, Cherry Water & Cherry
+                           <p><em>
+                        </td>
+                        <td >
+                           410
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Bar Shooter
+                           <p Class="text-muted small"><em>Beer, Tequila, Mint
+                           <p><em>
+                        </td>
+                        <td >
+                           440
+                           <p Class="text-muted small"><em>Dry & minty
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Choco Beer
+                           <p Class="text-muted small"><em>Beer, Dark Rum, Chocolate Syrup
+                           <p><em>
+                        </td>
+                        <td >
+                           390
+                           <p Class="text-muted small"><em>Dry & strong
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>VODKA Based</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Iced Chilly
+                           <p Class="text-muted small"><em>Vodka, Pineapple & Pomegranate Juice With Green Chilly
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Little spicy
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Sama
+                           <p Class="text-muted small"><em>Vodka, Almond Or Hazelnut Syrup, Chocolate Syrup
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Lunar Victory
+                           <p Class="text-muted small"><em>Vodka, Fresh Cucumber & Thyme With S & S Mix
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Refreshing sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Summer & Winter
+                           <p Class="text-muted small"><em>Vodka, Orange Liquor & Orange Juice
+                           <p><em>
+                        </td>
+                        <td >
+                           390
+                           <p Class="text-muted small"><em>Little sour & dry
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Spicytiny
+                           <p Class="text-muted small"><em>Vodka, Indian Spice, Dash Of Chilly Sauce
+                           <p><em>
+                        </td>
+                        <td >
+                           210
+                           <p Class="text-muted small"><em>Spicy
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>Tequila</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Agave Cola
+                           <p Class="text-muted small"><em>Tequila, Lemon Wedge & Coke
+                           <p><em>
+                        </td>
+                        <td >
+                           420
+                           <p Class="text-muted small"><em>Sweet
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Fizzy Babaloush
+                           <p Class="text-muted small"><em>Tequila, Grape Juice, Tonic Water
+                           <p><em>
+                        </td>
+                        <td >
+                           490
+                           <p Class="text-muted small"><em>Dry sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Mexican Colada
+                           <p Class="text-muted small"><em>Tequila, Blue Curacao, Pineapple Juice & Coconut Powder
+                           <p><em>
+                        </td>
+                        <td >
+                           420
+                           <p Class="text-muted small"><em>Sweet & strong
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Black Dreamer
+                           <p Class="text-muted small"><em>Tequila & Coffee
+                           <p><em>
+                        </td>
+                        <td >
+                           410
+                           <p Class="text-muted small"><em>Dark coffee
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Mexican
+                           <p Class="text-muted small"><em>Tequila, Grape Juice, Grenadine
+                           <p><em>
+                        </td>
+                        <td >
+                           440
+                           <p Class="text-muted small"><em>Sweet & dry
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>GIN</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Giver
+                           <p Class="text-muted small"><em>Gin, Sweet Vermouth
+                           <p><em>
+                        </td>
+                        <td >
+                           290
+                           <p Class="text-muted small"><em>Sweetish dry
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Elevated Soul Lemon
+                           <p Class="text-muted small"><em>Gin & Energy Drink With Lime Slice
+                           <p><em>
+                        </td>
+                        <td >
+                           340
+                           <p Class="text-muted small"><em>Energetic
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Jalsa
+                           <p Class="text-muted small"><em>Gin, Vodka, Sweet Vermouth & Lemonade
+                           <p><em>
+                        </td>
+                        <td >
+                           320
+                           <p Class="text-muted small"><em>Sweet & strong
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Ginner Rock
+                           <p Class="text-muted small"><em>Gin, vodka, lemon juice & tonic water
+                           <p><em>
+                        </td>
+                        <td >
+                           340
+                           <p Class="text-muted small"><em>Sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Sweet Lady
+                           <p Class="text-muted small"><em>Gin, Orange Juice, Almond Syrup & Grenoline & Lemonade
+                           <p><em>
+                        </td>
+                        <td >
+                           290
+                           <p Class="text-muted small"><em>Sweet & sour
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>LONG DRINKS</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Energetic Jalsa
+                           <p Class="text-muted small"><em>Vodka, Gin, Whisky, White Rum, Dark Rum, Spicy Lemonade Syrup, Top It Up With Lemonade
+                           <p><em>
+                        </td>
+                        <td >
+                           540
+                           <p Class="text-muted small"><em>Spicy & strong
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Bunny da Iced Tea
+                           <p Class="text-muted small"><em>Vodka, Gin, White Rum, Whisky, Tequila, Grenadine Syrup, Craneberry Juice, Black Salt
+                           <p><em>
+                        </td>
+                        <td >
+                           530
+                           <p Class="text-muted small"><em>Sour & dry
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Blue Frog
+                           <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Blue Curacao, Strongest Energy Energy Drink
+                           <p><em>
+                        </td>
+                        <td >
+                           540
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Kala Khatta Iced Tea
+                           <p Class="text-muted small"><em>Gin, Vodka, White Rum, Whisky, Dark Rum , Kala khatta syrup, chat masala, top it up with cola
+                           <p><em>
+                        </td>
+                        <td >
+                           530
+                           <p Class="text-muted small"><em>Strong
+                           <p><em>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Summer Iced Tea
+                           <p Class="text-muted small"><em>Gin, Vodka, Whisky, White Rum, Kokum Syrup, Chat Masala Top It Up With Sparkling Water
+                           <p><em>
+                        </td>
+                        <td >
+                           490
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>SHOTS</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Jager Bomb
+                           <p Class="text-muted small"><em>Jagermeiser & Energy Drink
+                           <p><em>
+                        </td>
+                        <td >
+                           490
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Paan Shot
+                           <p Class="text-muted small"><em>Gin & Vodka, Paan Syrup
+                           <p><em>
+                        </td>
+                        <td >
+                           390
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           B-52
+                           <p Class="text-muted small"><em>Kahlua, Baileys, Orange Liquor
+                           <p><em>
+                        </td>
+                        <td >
+                           440
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Flaming Shot
+                           <p Class="text-muted small"><em>Sambuca, Dark Rum
+                           <p><em>
+                        </td>
+                        <td >
+                           440
+                        </td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Jalsa Shot
+                           <p Class="text-muted small"><em>O3 Flavored Shots Made With Vodka, Gin & White Rum
                            <footer class="blockquote-footer small text-center">
-                           Chef's Special
+                           Bartender's Special
                            <footer>
+                           <p><em>
                         </td>
-                        <td >290</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Jungli Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           490
                         </td>
-                        <td >260</td>
                      </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Tandoori Lolypop 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary text-center" colspan=2>MOCKTAILS</td>
+                     </tr>
+                     <tr>
+                        <td Class="text-primary">
+                           Citron sangria
+                           <p Class="text-muted small"><em>Grape & Orange Juice With Chopped Apple
+                           <p><em>
                         </td>
-                        <td >210</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Hirani Kabab</td>
-                        <td >310</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Tikka</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Suprim Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           190
                         </td>
-                        <td >240</td>
                      </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Banjara Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           Refreshing king
+                           <p Class="text-muted small"><em>Mango Juice, Mint Leafs, Fresh Cream & Sugar Syrup
+                           <p><em>
                         </td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Pahadi Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           140
                         </td>
-                        <td >230</td>
                      </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Sholay Kabab</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Angara Kabab</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Reshmi Kabab</td>
-                        <td >240</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Malai Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           Chatpata Anar
+                           <p Class="text-muted small"><em>Pomegranate Juice, Orange Juice With Chat Masala
+                           <p><em>
                         </td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Seekh Kabab</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Chingari Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           190
                         </td>
-                        <td >360</td>
                      </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Achari Kabab</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Chatpata Kabab</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Rozali Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           Guava smash
+                           <p Class="text-muted small"><em>Guava Juice, Chilly Sauce, Black Pepper, S & S Mix
+                           <p><em>
                         </td>
-                        <td >340</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Tangdi Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           170
                         </td>
-                        <td >250</td>
                      </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Platter 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           Blend lime
+                           <p Class="text-muted small"><em>Mint Leafs, Lime Juice, Sparkling Water, Sugar Syrup
+                           <p><em>
                         </td>
-                        <td >650</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Pops</td>
-                        <td >280</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>
-                           Chicken Crispy 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
-                        <td >210</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Spring Roll</td>
-                        <td >210</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Hot Pan</td>
-                        <td >210</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Lolipop Masala</td>
-                        <td >250</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Lolipop Dry</td>
-                        <td >250</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Manchurian</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Chilii</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken 65</td>
-                        <td >230</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Junglee</td>
-                        <td >280</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Afgani</td>
-                        <td >280</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Chicken Fry</td>
-                        <td >240</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Surmai Fry / Tandoor</td>
-                        <td >As per Season</td>
-                     </tr>
-                     <tr Class="text-danger">
-                        <td>Pomplet Fry / Tandoor</td>
-                        <td >As per Season</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Hara Bhara Kabab</td>
-                        <td>180</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Paneer Rojali Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           140
                         </td>
-                        <td>260</td>
                      </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Dum Tikka</td>
-                        <td>240</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Malai Kabab</td>
-                        <td>200</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Paneer Banjara Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           Red island
+                           <p Class="text-muted small"><em>Lemonade, Grenadine, Cherry
+                           <p><em>
                         </td>
-                        <td>200</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Paneer Pahadi Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           140
                         </td>
-                        <td>200</td>
                      </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Paneer Sholay Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           Kiwi Garden
+                           <p Class="text-muted small"><em>Kiwi Crush, Fresh Kiwi, Sparkling Water, Chat Masala
+                           <p><em>
                         </td>
-                        <td>200</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Paneer Angara Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           140
                         </td>
-                        <td>200</td>
                      </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Paneer Chatpata Kabab 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           5 Elements
+                           <p Class="text-muted small"><em>Mint, Lime Juice, Pomegranate Seeds, Sugar Syrup, Sparkling Water
+                           <p><em>
                         </td>
-                        <td>200</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Hot Pan</td>
-                        <td>200</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Crispy</td>
-                        <td>190</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Makhani</td>
-                        <td>180</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer 65</td>
-                        <td>180</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Chilli</td>
-                        <td>210</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Manchurian</td>
-                        <td>170</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Kasuri Kabab</td>
-                        <td>240</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Zilmil Kabab</td>
-                        <td>230</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Mushroom Tikka 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                        <td >
+                           190
                         </td>
-                        <td>210</td>
                      </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Mashroom Achari 
-                           <footer class="blockquote-footer small text-center">
-                           Chef's Special
-                           <footer>
+                     <tr>
+                        <td Class="text-primary">
+                           Orange Strawberry Splitzer
+                           <p Class="text-muted small"><em>Orange Juice, Strawberry Crush, Sparkling Water
+                           <p><em>
                         </td>
-                        <td>230</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Mushroom Schezwan</td>
-                        <td>170</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Mushroom 65</td>
-                        <td>170</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Crunchy</td>
-                        <td>220</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Kaju Fry</td>
-                        <td>220</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Green Peas Fry</td>
-                        <td>130</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Spring Roll</td>
-                        <td>180</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Crispy</td>
-                        <td>180</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Manchurian</td>
-                        <td>170</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Chiiii</td>
-                        <td>170</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg 65</td>
-                        <td>170</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Hot Pan</td>
-                        <td>180</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Crunchy</td>
-                        <td>220</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Seekh Kabab</td>
-                        <td>190</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Veg Platter</td>
-                        <td>450</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Gobi Manchurian Dry</td>
-                        <td>170</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>
-                           Cheese Cherry Pineapple 
-                           <footer class="blockquote-footer small text-center">
-                           Jalsa Special
-                           <footer>
+                        <td >
+                           140
                         </td>
-                        <td>150</td>
                      </tr>
-                     <tr Class="text-success">
-                        <td>French Fries</td>
-                        <td>120</td>
+                     <tr>
+                        <td Class="text-primary">
+                           Iced Tea
+                           <p Class="text-muted small"><em>Lemon Or Peach
+                           <p><em>
+                        </td>
+                        <td >
+                           140
+                        </td>
                      </tr>
-                     <tr Class="text-success">
-                        <td>Veg Pakoda</td>
-                        <td>100</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Cheese Pakoda</td>
-                        <td>150</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Onion Pakoda</td>
-                        <td>100</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Paneer Pakoda</td>
-                        <td>100</td>
-                     </tr>
-                     <tr Class="text-success">
-                        <td>Cashewnut Fry</td>
-                        <td>170</td>
+                     <tr>
+                        <td Class="text-primary">
+                           Iced Coffee
+                           <p Class="text-muted small"><em>Espresso Or Irish Cream With Milk
+                           <p><em>
+                        </td>
+                        <td >
+                           190
+                        </td>
                      </tr>
                   </tbody>
                </table>
+               <a id="Starters"></a>       
             </div>
          </div>
-         <!-- NonVegStarters End -->
+      </div>
+      <!-- Cocktails End -->
+      <!-- Starters Begin-->
+      <div  class="card mt-4">
+         <div class="card-header">
+            <h5  class="text-center">Starters</h5>
+         </div>
+         <div class="card-body">
+            <table class="table">
+               <tbody>
+                  <colgroup>
+                     <col class="col-md-10">
+                     <col class="col-md-2">
+                  </colgroup>
+                  <tr Class="text-danger">
+                     <td>
+                        Murg Makhrana Kabab 
+                        <footer class="blockquote-footer small text-center text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >290</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Koliwada</td>
+                     <td >240</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Dragon</td>
+                     <td >260</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Seekh Kabab</td>
+                     <td >350</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Tandoori</td>
+                     <td >500/260</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Jungli 
+                        <footer class="blockquote-footer small text-center ">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >240</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Rangila Kukkad 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >290</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Jungli Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >260</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Tandoori Lolypop 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >210</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Hirani Kabab</td>
+                     <td >310</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Tikka</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Suprim Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >240</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Banjara Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Pahadi Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Sholay Kabab</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Angara Kabab</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Reshmi Kabab</td>
+                     <td >240</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Malai Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Seekh Kabab</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Chingari Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >360</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Achari Kabab</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Chatpata Kabab</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Rozali Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >340</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Tangdi Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >250</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Platter 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td >650</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Pops</td>
+                     <td >280</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>
+                        Chicken Crispy 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     <td >210</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Spring Roll</td>
+                     <td >210</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Hot Pan</td>
+                     <td >210</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Lolipop Masala</td>
+                     <td >250</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Lolipop Dry</td>
+                     <td >250</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Manchurian</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Chilii</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken 65</td>
+                     <td >230</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Junglee</td>
+                     <td >280</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Afgani</td>
+                     <td >280</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Chicken Fry</td>
+                     <td >240</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Surmai Fry / Tandoor</td>
+                     <td >As per Season</td>
+                  </tr>
+                  <tr Class="text-danger">
+                     <td>Pomplet Fry / Tandoor</td>
+                     <td >As per Season</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Hara Bhara Kabab</td>
+                     <td>180</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Paneer Rojali Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>260</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Dum Tikka</td>
+                     <td>240</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Malai Kabab</td>
+                     <td>200</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Paneer Banjara Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>200</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Paneer Pahadi Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>200</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Paneer Sholay Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>200</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Paneer Angara Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>200</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Paneer Chatpata Kabab 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>200</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Hot Pan</td>
+                     <td>200</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Crispy</td>
+                     <td>190</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Makhani</td>
+                     <td>180</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer 65</td>
+                     <td>180</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Chilli</td>
+                     <td>210</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Manchurian</td>
+                     <td>170</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Kasuri Kabab</td>
+                     <td>240</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Zilmil Kabab</td>
+                     <td>230</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Mushroom Tikka 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>210</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Mashroom Achari 
+                        <footer class="blockquote-footer small text-center">
+                        Chef's Special
+                        <footer>
+                     </td>
+                     <td>230</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Mushroom Schezwan</td>
+                     <td>170</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Mushroom 65</td>
+                     <td>170</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Crunchy</td>
+                     <td>220</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Kaju Fry</td>
+                     <td>220</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Green Peas Fry</td>
+                     <td>130</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Spring Roll</td>
+                     <td>180</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Crispy</td>
+                     <td>180</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Manchurian</td>
+                     <td>170</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Chiiii</td>
+                     <td>170</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg 65</td>
+                     <td>170</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Hot Pan</td>
+                     <td>180</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Crunchy</td>
+                     <td>220</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Seekh Kabab</td>
+                     <td>190</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Platter</td>
+                     <td>450</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Gobi Manchurian Dry</td>
+                     <td>170</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>
+                        Cheese Cherry Pineapple 
+                        <footer class="blockquote-footer small text-center">
+                        Jalsa Special
+                        <footer>
+                     </td>
+                     <td>150</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>French Fries</td>
+                     <td>120</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Veg Pakoda</td>
+                     <td>100</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Cheese Pakoda</td>
+                     <td>150</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Onion Pakoda</td>
+                     <td>100</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Paneer Pakoda</td>
+                     <td>100</td>
+                  </tr>
+                  <tr Class="text-success">
+                     <td>Cashewnut Fry</td>
+                     <td>170</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <!-- NonVegStarters End -->
       </div>
       </div>
-
       <a href="#mainDiv" id="myBtn" >
          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
          </svg>
       </a>
-	  
-	        <!-- Modal Add New Party-->
+      <!-- Modal Add New Party-->
       <div class="modal fade" id="Offers" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -2054,67 +1999,67 @@
                   </button>
                </div>
                <div class="modal-body">
-                  <h4 class="animate-charcter">Owner's Birthay Offer</h4></br>
-				  BUY 180ML GET 30ML FREE</br>
-				  BUY 3 Beer GET 1 Beer FREE
-				  <footer class="blockquote-footer">Offer valid any brand</cite></footer>
-				  <footer class="blockquote-footer">Offer valid only for <strong class="animate-charcter">25th June and 1st July</strong></cite></footer>
-				  <footer class="blockquote-footer">Need to buy Nip or 3 Beers first. No Sum up</cite></footer>
-				  <footer class="blockquote-footer">Owner has rights to change or deny offer</cite></footer>
+                  <h4 class="animate-charcter">Owner's Birthay Offer</h4>
+                  </br>
+                  BUY 180ML GET 30ML FREE</br>
+                  BUY 3 Beer GET 1 Beer FREE
+                  <footer class="blockquote-footer">Offer valid any brand</cite></footer>
+                  <footer class="blockquote-footer">Offer valid only for <strong class="animate-charcter">25th June and 1st July</strong></cite></footer>
+                  <footer class="blockquote-footer">Need to buy Nip or 3 Beers first. No Sum up</cite></footer>
+                  <footer class="blockquote-footer">Owner has rights to change or deny offer</cite></footer>
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  
                </div>
             </div>
          </div>
       </div>
-	  
       <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script>
-         
-         
          // When the user clicks on the button, scroll to the top of the document
          function topFunction() {
            document.body.scrollTop = 0;
            document.documentElement.scrollTop = 0;
          }
       </script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script>
-		function resetSearchInput()
-		{document.getElementById('searchMenu').value = '';	var value = $("#searchMenu").val().toLowerCase();
-														$("tr").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) });
-														$( "div.card" ).each(function( i ) { $(this).show();});
-														}
-		
-		
-			$(document).ready(function(){
-			  
-			  $("#searchMenu").on("keyup focus clear", function() 	{
-														var value = $(this).val().toLowerCase();
-														$("tr").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) });
-														
-
-			$( "div.card" ).each(function( i ) {
-				if($(this).height() == 113)
-				{
-				$(this).hide();
-				}
-				else{
-				$(this).show();
-				}
-				});
-														
-														});
-										});
-			
-			
-
-		</script>
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+         function resetSearchInput()
+         {document.getElementById('searchMenu').value = '';	var value = $("#searchMenu").val().toLowerCase();
+         												$("tr").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) });
+         												$( "div.card" ).each(function( i ) { $(this).show();});
+         												}
+         
+         
+         	$(document).ready(function(){
+         	  
+         	  $("#searchMenu").on("keyup focus clear", function() 	{
+         												var value = $(this).val().toLowerCase();
+         												$("tr").filter(function() { $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) });
+         												
+         
+         	$( "div.card" ).each(function( i ) {
+         		if($(this).height() == 113)
+         		{
+         		$(this).hide();
+         		}
+         		else{
+         		$(this).show();
+         		}
+         		});
+         												
+         												});
+         								});
+         	
+         	
+         
+      </script>
+      <script>
+         var myModal = new bootstrap.Modal(document.getElementById('Offers'), {})
+         myModal.show()
+      </script>
    </body>
 </html>
