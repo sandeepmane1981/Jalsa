@@ -10,6 +10,34 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <link rel="stylesheet" href="Sources/jalsa.css">
       <script src="Sources/search.js"></script>
+	  <style>
+         .animate-charcter
+         {
+         text-transform: uppercase;
+         background-image: linear-gradient(
+         -225deg,
+         #231557 0%,
+         #44107a 29%,
+         #ff1361 67%,
+         #fff800 100%
+         );
+         background-size: auto auto;
+         background-clip: border-box;
+         background-size: 200% auto;
+         color: #fff;
+         background-clip: text;
+         text-fill-color: transparent;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         animation: textclip 2s linear infinite;
+         display: inline-block;
+         }
+         @keyframes textclip {
+         to {
+         background-position: 200% center;
+         }
+         }
+      </style>
    </head>
    <body>
       <nav class="navbar sticky-top navbar-dark bg-dark">
@@ -238,12 +266,12 @@
                            </figure>
                         </a>
                      </div>
-                     <!-- <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Today"><figure>
+                     <div class="col">
+                        <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#todaysSpecail">
                            <img src="Sources/Images/Today.jpg" class="rounded-circle border border-primary img-circle"alt="Today's Specail"></img>
                            <figcaption>Today's Specail</figcaption>
-                        </figure></a>
-                        </div> -->
+                        </figure></button>
+                        </div>
                      <div class="col">
                         <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Soup">
                            <figure>
@@ -275,7 +303,24 @@
                   </br>
                   <p class="border-bottom"</p>
                   </br>
+				  
                   <div class="d-flex flex-row flex-nowrap   overflow-auto mt-3">
+				  <div class="card card-block mx-2" style="min-width: 300px;">
+                        <div class="card-body">
+                           <h5 class="card-title">Online Order</h5>
+                           <p class="card-text">Get <strong>discount</strong> if you have ordered from Swiggy</br>Press the link below to open Swiggy App</p>
+                           <div class="row">
+                              <div class="col">
+                                 <strong>Swiggy</strong>
+                                 <a  href="https://www.swiggy.com/restaurants/jalsa-restaurant-kothrud-pune-590513?sld=false">
+                                    <figure>
+                                       <img src="Sources/Images/Swiggy.jpg" class="rounded-circle border border-primary img-circle-small" alt="Instagram"></img>
+                                    </figure>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="card card-block mx-2" style="min-width: 300px;">
                         <div class="card-body">
                            <h5 class="card-title">Specail Complimentory</h5>
@@ -283,17 +328,17 @@
                            <div class="row">
                               <div class="col">
                                  <figure><strong>Peanuts</strong>
-                                    <img src="Sources/Images/Peaunts.jpg" class="rounded-circle border border-primary img-circle" alt="Peanuts"></img>
+                                    <img src="Sources/Images/Peaunts.jpg" class="rounded-circle border border-primary img-circle-small" alt="Peanuts"></img>
                                  </figure>
                               </div>
                               <div class="col">
                                  <figure><strong>Chakali</strong>
-                                    <img src="Sources/Images/Chakali.jpg" class="rounded-circle border border-primary img-circle" alt="Chakali"></img>
+                                    <img src="Sources/Images/Chakali.jpg" class="rounded-circle border border-primary img-circle-small" alt="Chakali"></img>
                                  </figure>
                               </div>
                               <div class="col">
                                  <figure><strong>Specail ?</strong>
-                                    <img src="Sources/Images/Question.png" class="rounded-circle border border-primary img-circle" alt="Special"></img>
+                                    <img src="Sources/Images/Question.png" class="rounded-circle border border-primary img-circle-small" alt="Special"></img>
                                  </figure>
                               </div>
                            </div>
@@ -302,13 +347,13 @@
                      <div class="card card-block mx-2" style="min-width: 300px;">
                         <div class="card-body">
                            <h5 class="card-title">Google us</h5>
-                           <p class="card-text">Rate us on Google reviews and ask for more discount on next visit</p>
+                           <p class="card-text">Rate us on Google reviews and ask for more <strong>discount</strong> on next visit</p>
                            <div class="row">
                               <div class="col">
                                  <strong>Rate Us</strong>
                                  <a  href="https://goo.gl/maps/Xif2uSrwXWQRgVhP6">
                                     <figure>
-                                       <img src="Sources/Images/google1.jpg" class="rounded-circle border border-primary img-circle" alt="Google"></img>
+                                       <img src="Sources/Images/google1.jpg" class="rounded-circle border border-primary img-circle-small" alt="Google"></img>
                                     </figure>
                                  </a>
                               </div>
@@ -316,7 +361,7 @@
                                  <strong>Find Us</strong>
                                  <a  href="https://goo.gl/maps/Xif2uSrwXWQRgVhP6">
                                     <figure>
-                                       <img src="Sources/Images/Google.jpg" class="rounded-circle border border-primary img-circle" alt="Google"></img>
+                                       <img src="Sources/Images/Google.jpg" class="rounded-circle border border-primary img-circle-small" alt="Google"></img>
                                     </figure>
                                  </a>
                               </div>
@@ -332,7 +377,7 @@
                                  <strong>Facebook</strong>
                                  <a  href="https://www.facebook.com/JalsaRestaurantAtKothrud/">
                                     <figure>
-                                       <img src="Sources/Images/facebook.jpg" class="rounded-circle border border-primary img-circle"  alt="facebook"></img>
+                                       <img src="Sources/Images/facebook.jpg" class="rounded-circle border border-primary img-circle-small"  alt="facebook"></img>
                                     </figure>
                                  </a>
                               </div>
@@ -340,28 +385,21 @@
                                  <strong>Instagram</strong>
                                  <a  href="https://www.instagram.com/jalsa.restaurant.bar/">
                                     <figure>
-                                       <img src="Sources/Images/Instagram.svg" class="rounded-circle border border-primary img-circle" alt="Instagram"></img>
+                                       <img src="Sources/Images/Instagram.svg" class="rounded-circle border border-primary img-circle-small" alt="Instagram"></img>
                                     </figure>
                                  </a>
                               </div>
-                              <div class="col">
-                                 <strong>Swiggy</strong>
-                                 <a  href="https://www.swiggy.com/restaurants/jalsa-restaurant-kothrud-pune-590513?sld=false">
-                                    <figure>
-                                       <img src="Sources/Images/Swiggy.jpg" class="rounded-circle border border-primary img-circle" alt="Instagram"></img>
-                                    </figure>
-                                 </a>
-                              </div>
+                              
                            </div>
                         </div>
                      </div>
                      <div class="card card-block mx-2" style="min-width: 300px;">
                         <div class="card-body">
                            <h5 class="card-title">Contact us</h5>
-                           <p class="card-text">Order food, Table booking etc.</p>
+                           <p class="card-text">Call us for Home delivery , Table booking etc.</p>
                            </br>
-                           <img src="Sources/Images/Whatsapp.jpg" class="rounded-circle border border-primary img-circle" alt="Instagram">+917620542003</img></br>
-                           <img src="Sources/Images/Whatsapp.jpg" class="rounded-circle border border-primary img-circle" alt="Instagram">+919890883252</img>
+                           <img src="Sources/Images/Whatsapp.jpg" class="rounded-circle border border-primary img-circle-small" alt="Phone">+917620542003</img></br>
+                           <img src="Sources/Images/Whatsapp.jpg" class="rounded-circle border border-primary img-circle-small" alt="Phone">+919890883252</img>
                         </div>
                      </div>
                   </div>
@@ -369,6 +407,33 @@
             </div>
          </div>
       </div>
+	  <!-- Modal Todays special-->
+	  <div class="modal fade" id="todaysSpecail" tabindex="-1" role="dialog" aria-labelledby="todaysSpecailLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header align-items-center">
+                  <h5 class="modal-title animate-charcter" id="exampleModalLabel" >Today's Special</h5>
+                  
+               </div>
+               <div class="modal-body">
+			      <h4 class="animate-charcter1">Pomfret Tandoori</h4>
+                  <footer class="blockquote-footer">Fresh Pomfret marinated deep and roasted in Tandoor</cite></footer>
+				  <h4 class="animate-charcter1">Chicken Sagawala</h4>
+                  <footer class="blockquote-footer">Spicey chicken grey</cite></footer>
+                  <h4 class="animate-charcter1">Prawns Butter Garlic</h4>
+                  <footer class="blockquote-footer">Crispy Prawns served with White Grevy. Best Starter</cite></footer>
+                  <h4 class="animate-charcter1">Chicken Blackbean</h4>
+				  <footer class="blockquote-footer">Made with special blackbean sauce</cite></footer> 
+				  <h4 class="animate-charcter1">Mutton Sagawala</h4>
+                  <footer class="blockquote-footer">Spicey Mutton Grey</cite></footer>
+				  <h4 class="animate-charcter1">Paneer Blackbean</h4>
+				  <footer class="blockquote-footer">Made with special blackbean sauce</cite></footer> 
+               </div>
+              
+            </div>
+         </div>
+      </div>
+	  
       <div class="accordion accordion-flush" id="mainDiv">
          <div class="container">
             <a class="section" id="Whisky" style="scroll-margin-top: 70px; padding-top: 65px"></a>         	   
@@ -904,7 +969,7 @@
                            <tr>
                               <td>Tuborg Mild</td>
                               <td>180</td>
-                              <td>320</td>
+                              <td>340</td>
                            </tr>
                            <tr>
                               <td>Tuborg Classic</td>
