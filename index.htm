@@ -10,7 +10,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <link rel="stylesheet" href="Sources/jalsa.css">
       <script src="Sources/search.js"></script>
-	  <style>
+      <style>
          .animate-charcter
          {
          text-transform: uppercase;
@@ -270,8 +270,9 @@
                         <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#todaysSpecail">
                            <img src="Sources/Images/Today.jpg" class="rounded-circle border border-primary img-circle"alt="Today's Specail"></img>
                            <figcaption>Today's Specail</figcaption>
-                        </figure></button>
-                        </div>
+                           </figure>
+                        </button>
+                     </div>
                      <div class="col">
                         <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Soup">
                            <figure>
@@ -303,9 +304,8 @@
                   </br>
                   <p class="border-bottom"</p>
                   </br>
-				  
                   <div class="d-flex flex-row flex-nowrap   overflow-auto mt-3">
-				  <div class="card card-block mx-2" style="min-width: 300px;">
+                     <div class="card card-block mx-2" style="min-width: 300px;">
                         <div class="card-body">
                            <h5 class="card-title">Online Order</h5>
                            <p class="card-text">Order food online with Swiggy and Thrive
@@ -318,7 +318,7 @@
                                     </figure>
                                  </a>
                               </div>
-							  <div class="col">
+                              <div class="col">
                                  <strong>Thrive</strong>
                                  <a  href="https://thrivenow.in/jalsa-restaurant-bar">
                                     <figure>
@@ -352,7 +352,7 @@
                            </div>
                         </div>
                      </div>
-					 <div class="card card-block mx-2" style="min-width: 300px;">
+                     <div class="card card-block mx-2" style="min-width: 300px;">
                         <div class="card-body">
                            <h5 class="card-title">Reservations</h5>
                            <p class="card-text">Call us for Table booking or home delivery</p>
@@ -406,43 +406,39 @@
                                     </figure>
                                  </a>
                               </div>
-                              
                            </div>
                         </div>
                      </div>
-                     
                   </div>
                </div>
             </div>
          </div>
       </div>
-	  <!-- Modal Todays special-->
-	  <div class="modal fade" id="todaysSpecail" tabindex="-1" role="dialog" aria-labelledby="todaysSpecailLabel" aria-hidden="true">
+      <!-- Modal Todays special-->
+      <div class="modal fade" id="todaysSpecail" tabindex="-1" role="dialog" aria-labelledby="todaysSpecailLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                <div class="modal-header align-items-center">
                   <h5 class="modal-title animate-charcter" id="exampleModalLabel" >Today's Special</h5>
-                  
                </div>
                <div class="modal-body">
-			      <h4 class="animate-charcter1">Pomfret Tandoori</h4>
+                  <h4 class="animate-charcter1">Pomfret Tandoori</h4>
                   <footer class="blockquote-footer">Fresh Pomfret marinated deep and roasted in Tandoor</cite></footer>
-				  <h4 class="animate-charcter1">Chicken Sagawala</h4>
+                  <h4 class="animate-charcter1">Chicken Sagawala</h4>
                   <footer class="blockquote-footer">Spicey chicken grey</cite></footer>
                   <h4 class="animate-charcter1">Prawns Butter Garlic</h4>
                   <footer class="blockquote-footer">Crispy Prawns served with White Grevy. Best Starter</cite></footer>
                   <h4 class="animate-charcter1">Chicken Blackbean</h4>
-				  <footer class="blockquote-footer">Made with special blackbean sauce</cite></footer> 
-				  <h4 class="animate-charcter1">Mutton Sagawala</h4>
+                  <footer class="blockquote-footer">Made with special blackbean sauce</cite></footer>
+                  <h4 class="animate-charcter1">Mutton Sagawala</h4>
                   <footer class="blockquote-footer">Spicey Mutton Grey</cite></footer>
-				  <h4 class="animate-charcter1">Paneer Blackbean</h4>
-				  <footer class="blockquote-footer">Made with special blackbean sauce</cite></footer> 
+                  <h4 class="animate-charcter1">Paneer Blackbean</h4>
+                  <footer class="blockquote-footer">Made with special blackbean sauce</cite></footer>
                </div>
-              
             </div>
          </div>
       </div>
-	  <!-- Modal Offers-->
+      <!-- Modal Offers-->
       <div class="modal fade" id="Offers" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -451,8 +447,8 @@
                </div>
                <div class="modal-body">
                   <footer class="blockquote-footer">Get 2% of your Total Bill as loyalty points.</cite></footer>
-				  <footer class="blockquote-footer">Just order with Phone number to enroll</cite></footer> 
-				  <footer class="blockquote-footer">Redeem anytime you want *</cite></footer> 
+                  <footer class="blockquote-footer">Just give phone number to enroll when you order</cite></footer>
+                  <footer class="blockquote-footer">Redeem anytime in 4o days</cite></footer>
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -462,9 +458,9 @@
       </div>
       <div class="accordion accordion-flush" id="mainDiv">
          <div class="container">
-            <a class="section" id="Whisky" style="scroll-margin-top: 70px; padding-top: 65px"></a>         	   
+            <a class="section" id="Whisky"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Whisky-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Whisky-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Whisky.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Whisky">Whisky</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Whisky-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Whisky-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Whisky.jpg" class="rounded-circle border border-primary img-circle-small" alt="Whisky"></img><a id="Whisky">Whisky</a>      </button>    </h2>
                <div id="Whisky-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Whisky-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -495,7 +491,7 @@
                               <td>150</td>
                               <td>210</td>
                               <td>330</td>
-                              <td>620</td>
+                              <td>580</td>
                            </tr>
                            <tr>
                               <td>Blenders Pride</td>
@@ -616,6 +612,20 @@
                               <td>180</td>
                               <td>350</td>
                            </tr>
+                           <tr>
+                              <td>Oaken Glow</td>
+                              <td>140</td>
+                              <td>180</td>
+                              <td>270</td>
+                              <td>520</td>
+                           </tr>
+                           <tr>
+                              <td>Sterling B10</td>
+                              <td>150</td>
+                              <td>190</td>
+                              <td>280</td>
+                              <td>540</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -623,7 +633,7 @@
             </div>
             <a class="section" id="Rum"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Rum-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rum-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rum.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Rum">Rum</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Rum-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rum-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rum.jpg" class="rounded-circle border border-primary img-circle-small" alt="Rum"></img><a id="Rum">Rum</a>      </button>    </h2>
                <div id="Rum-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Rum-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -667,8 +677,8 @@
                               <td>Old Monk</td>
                               <td>80</td>
                               <td>120</td>
-                              <td>140</td>
-                              <td>270</td>
+                              <td>150</td>
+                              <td>280</td>
                            </tr>
                            <tr>
                               <td>Captain Morgan</td>
@@ -684,6 +694,10 @@
                               <td>220</td>
                               <td>410</td>
                            </tr>
+                           <tr>
+                              <td>Old Monk 1 Litre</td>
+                              <td style="text-align:center">1500</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -691,7 +705,7 @@
             </div>
             <a class="section" id="Scotch"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Scotch-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Scotch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Scotch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Scotch">Scotch</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Scotch-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Scotch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Scotch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Scotch"></img><a id="Scotch">Scotch</a>      </button>    </h2>
                <div id="Scotch-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Scotch-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -707,8 +721,8 @@
                               <td>Red Label</td>
                               <td>230</td>
                               <td>450</td>
-                              <td>690</td>
-                              <td>1300</td>
+                              <td>600</td>
+                              <td>1100</td>
                            </tr>
                            <tr>
                               <td>Ballantines</td>
@@ -794,7 +808,7 @@
             </div>
             <a class="section" id="Vodka"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Vodka-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Vodka-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Vodka.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Vodka">Vodka</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Vodka-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Vodka-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Vodka.jpg" class="rounded-circle border border-primary img-circle-small" alt="Vodka"></img><a id="Vodka">Vodka</a>      </button>    </h2>
                <div id="Vodka-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Vodka-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -890,7 +904,7 @@
             </div>
             <a class="section" id="Gin"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Gin-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Gin-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Gin.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Gin">Gin</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Gin-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Gin-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Gin.jpg" class="rounded-circle border border-primary img-circle-small" alt="Gin"></img><a id="Gin">Gin</a>      </button>    </h2>
                <div id="Gin-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Gin-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -923,7 +937,7 @@
             </div>
             <a class="section" id="Wine"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Wine-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Wine-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Wine.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Wine">Wine</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Wine-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Wine-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Wine.jpg" class="rounded-circle border border-primary img-circle-small" alt="Wine"></img><a id="Wine">Wine</a>      </button>    </h2>
                <div id="Wine-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Wine-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -940,6 +954,13 @@
                               <td>Port</td>
                               <td style="text-align:center">160</td>
                            </tr>
+                           <tr>
+                              <td>Honeybee Brandy</td>
+                              <td>100</td>
+                              <td>120</td>
+                              <td>150</td>
+                              <td>290</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -947,7 +968,7 @@
             </div>
             <a class="section" id="Beer"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Beer-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Beer-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Beer.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Beer">Beer</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Beer-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Beer-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Beer.jpg" class="rounded-circle border border-primary img-circle-small" alt="Beer"></img><a id="Beer">Beer</a>      </button>    </h2>
                <div id="Beer-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Beer-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -994,7 +1015,7 @@
                            </tr>
                            <tr>
                               <td>Tuborg Mild</td>
-                              <td>180</td>
+                              <td>200</td>
                               <td>340</td>
                            </tr>
                            <tr>
@@ -1083,11 +1104,6 @@
                               <td>310</td>
                            </tr>
                            <tr>
-                              <td>Tuborg Premium</td>
-                              <td></td>
-                              <td>320</td>
-                           </tr>
-                           <tr>
                               <td>Breezer Watermelon</td>
                               <td></td>
                               <td>250</td>
@@ -1099,7 +1115,7 @@
             </div>
             <a class="section" id="ColdBeverages"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="ColdBeverages-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ColdBeverages-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/ColdBeverages.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="ColdBeverages">Cold Beverages</a>      </button>    </h2>
+               <h2 class="accordion-header" id="ColdBeverages-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ColdBeverages-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/ColdBeverages.jpg" class="rounded-circle border border-primary img-circle-small" alt="ColdBeverages"></img><a id="ColdBeverages">Cold Beverages</a>      </button>    </h2>
                <div id="ColdBeverages-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="ColdBeverages-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -1121,7 +1137,7 @@
                               <td style="text-align:center">30 | 50</td>
                            </tr>
                            <tr>
-                              <td>ThumsUp</td>
+                              <td>Thumsup</td>
                               <td style="text-align:center">30 | 60</td>
                            </tr>
                            <tr>
@@ -1148,6 +1164,10 @@
                               <td>Ginger Ale</td>
                               <td style="text-align:center">80</td>
                            </tr>
+                           <tr>
+                              <td>Diet Coke</td>
+                              <td style="text-align:center">60</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -1155,864 +1175,622 @@
             </div>
             <a class="section" id="Cocktail"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Cocktail-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cocktail-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cocktail.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Cocktail">Cocktail</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Cocktail-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cocktail-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cocktail.jpg" class="rounded-circle border border-primary img-circle-small" alt="Cocktail"></img><a id="Cocktail">Cocktail</a>      </button>    </h2>
                <div id="Cocktail-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Cocktail-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>CLASSICS</td>
+                              <td Class=" text-center" colspan=2>CLASSICS</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Long Island Iced Tea                           
-                                 <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Orange Liquor , Cola E Lemon Wedges                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Long Island Iced Tea                                                         
+                                 <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Orange Liquor , Cola E Lemon Wedges                                                         </em></p>
                               </td>
                               <td>                           490                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Cosmopolitan                           
-                                 <p Class="text-muted small"><em>Vodka, Orange Liquor, Cranberry Juice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Cosmopolitan                                                         
+                                 <p Class="text-muted small"><em>Vodka, Orange Liquor, Cranberry Juice                                                         </em></p>
                               </td>
                               <td>                           390                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Mojito                           
-                                 <p Class="text-muted small"><em>White Rum, Mint Leafs, Lime Wedges & Sparkling Water                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Mojito                                                         
+                                 <p Class="text-muted small"><em>White Rum, Mint Leafs, Lime Wedges & Sparkling Water                                                         </em></p>
                               </td>
                               <td>                           290                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Margarita                           
-                                 <p Class="text-muted small"><em>Tequila, Orange Liquor, Lime Juice, Salt                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Margarita                                                         
+                                 <p Class="text-muted small"><em>Tequila, Orange Liquor, Lime Juice, Salt                                                         </em></p>
                               </td>
                               <td>                           440                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Negroni                           
-                                 <p Class="text-muted small"><em>Gin, Campari, Sweet Vermouth                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Negroni                                                         
+                                 <p Class="text-muted small"><em>Gin, Campari, Sweet Vermouth                                                         </em></p>
                               </td>
                               <td>                           470                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Whisky Sour                           
-                                 <p Class="text-muted small"><em>Whisky, Egg White Or Pineapple Juice, S & S Mix                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Whisky Sour                                                         
+                                 <p Class="text-muted small"><em>Whisky, Egg White Or Pineapple Juice, S & S Mix                                                         </em></p>
                               </td>
                               <td>                           290                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Pinacolada                           
-                                 <p Class="text-muted small"><em>White Rum, Coconut Powder, Fresh Cream, Pineapple Juice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Pinacolada                                                         
+                                 <p Class="text-muted small"><em>White Rum, Coconut Powder, Fresh Cream, Pineapple Juice                                                         </em></p>
                               </td>
                               <td>                           310                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Mint Julep                           
-                                 <p Class="text-muted small"><em>Whisky, Mint Leafs & S & S Mix                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Mint Julep                                                         
+                                 <p Class="text-muted small"><em>Whisky, Mint Leafs & S & S Mix                                                         </em></p>
                               </td>
                               <td>                           290                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Moscow Mule                           
-                                 <p Class="text-muted small"><em>Vodka, Lemon Wedges, S & S Mix                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Moscow Mule                                                         
+                                 <p Class="text-muted small"><em>Vodka, Lemon Wedges, S & S Mix                                                         </em></p>
                               </td>
                               <td>                           290                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Mai-Tai                           
-                                 <p Class="text-muted small"><em>White & Dark Rum, Orange & Pineapple Juice, Almond Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Mai-Tai                                                         
+                                 <p Class="text-muted small"><em>White & Dark Rum, Orange & Pineapple Juice, Almond Syrup                                                         </em></p>
                               </td>
                               <td>                           320                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>DARK RUM Based</td>
+                              <td Class=" text-center" colspan=2>DARK RUM Based</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Citric Monkey                           
-                                 <p Class="text-muted small"><em>Dark Rum, Orange & Pineapple Juice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Citric Monkey                                                         
+                                 <p Class="text-muted small"><em>Dark Rum, Orange & Pineapple Juice                                                         </em></p>
                               </td>
                               <td>
-                                 230                           
-                                 <p Class="text-muted small"><em>Sweet & strong fragrance                           
-                                    </em>
-                                 </p>
+                                 230                                                         
+                                 <p Class="text-muted small"><em>Sweet & strong fragrance                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Tropical Pirate                           
-                                 <p Class="text-muted small"><em>Dark Rum, Banana Crush & Chips                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Tropical Pirate                                                         
+                                 <p Class="text-muted small"><em>Dark Rum, Banana Crush & Chips                                                         </em></p>
                               </td>
                               <td>
-                                 230                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 230                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Sweet Cherry                           
-                                 <p Class="text-muted small"><em>Dark Rum & Cherry                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Sweet Cherry                                                         
+                                 <p Class="text-muted small"><em>Dark Rum & Cherry                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Café Gorilla                           
-                                 <p Class="text-muted small"><em>Dark Rum & Coffee                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Café Gorilla                                                         
+                                 <p Class="text-muted small"><em>Dark Rum & Coffee                                                         </em></p>
                               </td>
                               <td>
-                                 240                           
-                                 <p Class="text-muted small"><em>Strong as coffee                           
-                                    </em>
-                                 </p>
+                                 240                                                         
+                                 <p Class="text-muted small"><em>Strong as coffee                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Sweety Nutty                           
-                                 <p Class="text-muted small"><em>Dark Rum, Hazelnut Or Almond Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Sweety Nutty                                                         
+                                 <p Class="text-muted small"><em>Dark Rum, Hazelnut Or Almond Syrup                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>WHITE RUM Based</td>
+                              <td Class=" text-center" colspan=2>WHITE RUM Based</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Drunkard Passion                           
-                                 <p Class="text-muted small"><em>White Rum, Dark Rum & Passion Fruit Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Drunkard Passion                                                         
+                                 <p Class="text-muted small"><em>White Rum, Dark Rum & Passion Fruit Syrup                                                         </em></p>
                               </td>
                               <td>
-                                 260                           
-                                 <p Class="text-muted small"><em>Strong                           
-                                    </em>
-                                 </p>
+                                 260                                                         
+                                 <p Class="text-muted small"><em>Strong                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Blue Whirlpool                           
-                                 <p Class="text-muted small"><em>White Rum, Blue Curacao & Black Salt                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Blue Whirlpool                                                         
+                                 <p Class="text-muted small"><em>White Rum, Blue Curacao & Black Salt                                                         </em></p>
                               </td>
                               <td>
-                                 230                           
-                                 <p Class="text-muted small"><em>Sweetish salted                           
-                                    </em>
-                                 </p>
+                                 230                                                         
+                                 <p Class="text-muted small"><em>Sweetish salted                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Maharaja Bardak                           
-                                 <p Class="text-muted small"><em>White Rum, Indian Gooseberry , Cranberry Juice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Maharaja Bardak                                                         
+                                 <p Class="text-muted small"><em>White Rum, Indian Gooseberry , Cranberry Juice                                                         </em></p>
                               </td>
                               <td>
-                                 240                           
-                                 <p Class="text-muted small"><em>Sour                           
-                                    </em>
-                                 </p>
+                                 240                                                         
+                                 <p Class="text-muted small"><em>Sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 White Caribbean                           
-                                 <p Class="text-muted small"><em>White Rum, Fresh Cream, Honey                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 White Caribbean                                                         
+                                 <p Class="text-muted small"><em>White Rum, Fresh Cream, Honey                                                         </em></p>
                               </td>
                               <td>
-                                 240                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 240                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Cuban Rock                           
-                                 <p Class="text-muted small"><em>White Rum, Pineapple Juice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Cuban Rock                                                         
+                                 <p Class="text-muted small"><em>White Rum, Pineapple Juice                                                         </em></p>
                               </td>
                               <td>
-                                 220                           
-                                 <p Class="text-muted small"><em>Sweet 'n' sour                           
-                                    </em>
-                                 </p>
+                                 220                                                         
+                                 <p Class="text-muted small"><em>Sweet 'n' sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>WHISKY Based</td>
+                              <td Class=" text-center" colspan=2>WHISKY Based</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Summer Rocket                           
-                                 <p Class="text-muted small"><em>Whisky, Banana Crush                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Summer Rocket                                                         
+                                 <p Class="text-muted small"><em>Whisky, Banana Crush                                                         </em></p>
                               </td>
                               <td>
-                                 260                           
-                                 <p Class="text-muted small"><em>Sweetish                           
-                                    </em>
-                                 </p>
+                                 260                                                         
+                                 <p Class="text-muted small"><em>Sweetish                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Pinaberry Whisky                           
-                                 <p Class="text-muted small"><em>Whisky, Pineapple Juice, Strawberry Crush                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Pinaberry Whisky                                                         
+                                 <p Class="text-muted small"><em>Whisky, Pineapple Juice, Strawberry Crush                                                         </em></p>
                               </td>
                               <td>
-                                 310                           
-                                 <p Class="text-muted small"><em>Sweet & sour                           
-                                    </em>
-                                 </p>
+                                 310                                                         
+                                 <p Class="text-muted small"><em>Sweet & sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Alpha Century                           
-                                 <p Class="text-muted small"><em>Whisky, Mango Juice, Chat Masala                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Alpha Century                                                         
+                                 <p Class="text-muted small"><em>Whisky, Mango Juice, Chat Masala                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Tangy                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Tangy                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Blue Hotty                           
-                                 <p Class="text-muted small"><em>Whisky, Blue Curacao, Coconut Powder & Pineapple                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Blue Hotty                                                         
+                                 <p Class="text-muted small"><em>Whisky, Blue Curacao, Coconut Powder & Pineapple                                                         </em></p>
                               </td>
                               <td>
-                                 260                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 260                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Vampire Embarrassed                           
-                                 <p Class="text-muted small"><em>Whisky, Cinnamon Syrup & Cinnamon Stick                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Vampire Embarrassed                                                         
+                                 <p Class="text-muted small"><em>Whisky, Cinnamon Syrup & Cinnamon Stick                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Indi spice                           
-                                 <p Class="text-muted small"><em>Red/White Wine/Vodka/Gin, Grape/Orange Juice & Indian Spice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Indi spice                                                         
+                                 <p Class="text-muted small"><em>Red/White Wine/Vodka/Gin, Grape/Orange Juice & Indian Spice                                                         </em></p>
                               </td>
                               <td>
-                                 290                           
-                                 <p Class="text-muted small"><em>Spicy flavor                           
-                                    </em>
-                                 </p>
+                                 290                                                         
+                                 <p Class="text-muted small"><em>Spicy flavor                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>WINE Based</td>
+                              <td Class=" text-center" colspan=2>WINE Based</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 W Square                           
-                                 <p Class="text-muted small"><em>White Wine, Whisky, Lemonade                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 W Square                                                         
+                                 <p Class="text-muted small"><em>White Wine, Whisky, Lemonade                                                         </em></p>
                               </td>
                               <td>
-                                 310                           
-                                 <p Class="text-muted small"><em>Sour                           
-                                    </em>
-                                 </p>
+                                 310                                                         
+                                 <p Class="text-muted small"><em>Sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Fermented Pop                           
-                                 <p Class="text-muted small"><em>Red/White Wine, Vodka/Gin, Cola/Lemonade                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Fermented Pop                                                         
+                                 <p Class="text-muted small"><em>Red/White Wine, Vodka/Gin, Cola/Lemonade                                                         </em></p>
                               </td>
                               <td>
-                                 240                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 240                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Residual Sour                           
-                                 <p Class="text-muted small"><em>White Wine, Sweet Vermouth, Orange Juice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Residual Sour                                                         
+                                 <p Class="text-muted small"><em>White Wine, Sweet Vermouth, Orange Juice                                                         </em></p>
                               </td>
                               <td>
-                                 240                           
-                                 <p Class="text-muted small"><em>Sour                           
-                                    </em>
-                                 </p>
+                                 240                                                         
+                                 <p Class="text-muted small"><em>Sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Cherry Drop                           
-                                 <p Class="text-muted small"><em>Red Wine, Vodka, Cherry Water                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Cherry Drop                                                         
+                                 <p Class="text-muted small"><em>Red Wine, Vodka, Cherry Water                                                         </em></p>
                               </td>
                               <td>
-                                 230                           
-                                 <p Class="text-muted small"><em>Dry                           
-                                    </em>
-                                 </p>
+                                 230                                                         
+                                 <p Class="text-muted small"><em>Dry                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Turkish Rose                           
-                                 <p Class="text-muted small"><em>White Wine, Gin, Grenadine & Lemonade                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Turkish Rose                                                         
+                                 <p Class="text-muted small"><em>White Wine, Gin, Grenadine & Lemonade                                                         </em></p>
                               </td>
                               <td>
-                                 240                           
-                                 <p Class="text-muted small"><em>Sour                           
-                                    </em>
-                                 </p>
+                                 240                                                         
+                                 <p Class="text-muted small"><em>Sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>Beer Based</td>
+                              <td Class=" text-center" colspan=2>Beer Based</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Gin Shandy                           
-                                 <p Class="text-muted small"><em>Beer, Gin, Lemon Juice & Lemonade                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Gin Shandy                                                         
+                                 <p Class="text-muted small"><em>Beer, Gin, Lemon Juice & Lemonade                                                         </em></p>
                               </td>
                               <td>
-                                 410                           
-                                 <p Class="text-muted small"><em>Sour                           
-                                    </em>
-                                 </p>
+                                 410                                                         
+                                 <p Class="text-muted small"><em>Sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Volcanic Rim                           
-                                 <p Class="text-muted small"><em>Beer, Vodka, Chilly Sauce                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Volcanic Rim                                                         
+                                 <p Class="text-muted small"><em>Beer, Vodka, Chilly Sauce                                                         </em></p>
                               </td>
                               <td>
-                                 420                           
-                                 <p Class="text-muted small"><em>Spicy                           
-                                    </em>
-                                 </p>
+                                 420                                                         
+                                 <p Class="text-muted small"><em>Spicy                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Bloody Cherry                           
-                                 <p Class="text-muted small"><em>Beer, Vodka, Cherry Water & Cherry                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Bloody Cherry                                                         
+                                 <p Class="text-muted small"><em>Beer, Vodka, Cherry Water & Cherry                                                         </em></p>
                               </td>
                               <td>
-                                 410                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 410                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Bar Shooter                           
-                                 <p Class="text-muted small"><em>Beer, Tequila, Mint                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Bar Shooter                                                         
+                                 <p Class="text-muted small"><em>Beer, Tequila, Mint                                                         </em></p>
                               </td>
                               <td>
-                                 440                           
-                                 <p Class="text-muted small"><em>Dry & minty                           
-                                    </em>
-                                 </p>
+                                 440                                                         
+                                 <p Class="text-muted small"><em>Dry & minty                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Choco Beer                           
-                                 <p Class="text-muted small"><em>Beer, Dark Rum, Chocolate Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Choco Beer                                                         
+                                 <p Class="text-muted small"><em>Beer, Dark Rum, Chocolate Syrup                                                         </em></p>
                               </td>
                               <td>
-                                 390                           
-                                 <p Class="text-muted small"><em>Dry & strong                           
-                                    </em>
-                                 </p>
+                                 390                                                         
+                                 <p Class="text-muted small"><em>Dry & strong                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>VODKA Based</td>
+                              <td Class=" text-center" colspan=2>Liquor Based</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Iced Chilly                           
-                                 <p Class="text-muted small"><em>Vodka, Pineapple & Pomegranate Juice With Green Chilly                           
-                                    </em>
-                                 </p>
+                              <td Class="">                              Ti Connie Coffee Liquor                                                      </td>
+                              <td>                              290                                                      </td>
+                           </tr>
+                           <tr>
+                              <td Class="">                              Ti Connie Sambucca                                                      </td>
+                              <td>                              360                                                      </td>
+                           </tr>
+                           <tr>
+                              <td Class="">                              Ti Connie Triple Sec                                                      </td>
+                              <td>                              290                                                      </td>
+                           </tr>
+                           <tr>
+                              <td Class="">                              Jagermeister                                                      </td>
+                              <td>                              450                                                      </td>
+                           </tr>
+                           <tr>
+                              <td Class=" text-center" colspan=2>VODKA Based</td>
+                           </tr>
+                           <tr>
+                              <td Class="">
+                                 Iced Chilly                                                         
+                                 <p Class="text-muted small"><em>Vodka, Pineapple & Pomegranate Juice With Green Chilly                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Little spicy                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Little spicy                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Sama                           
-                                 <p Class="text-muted small"><em>Vodka, Almond Or Hazelnut Syrup, Chocolate Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Sama                                                         
+                                 <p Class="text-muted small"><em>Vodka, Almond Or Hazelnut Syrup, Chocolate Syrup                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Lunar Victory                           
-                                 <p Class="text-muted small"><em>Vodka, Fresh Cucumber & Thyme With S & S Mix                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Lunar Victory                                                         
+                                 <p Class="text-muted small"><em>Vodka, Fresh Cucumber & Thyme With S & S Mix                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Refreshing sweet                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Refreshing sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Summer & Winter                           
-                                 <p Class="text-muted small"><em>Vodka, Orange Liquor & Orange Juice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Summer & Winter                                                         
+                                 <p Class="text-muted small"><em>Vodka, Orange Liquor & Orange Juice                                                         </em></p>
                               </td>
                               <td>
-                                 390                           
-                                 <p Class="text-muted small"><em>Little sour & dry                           
-                                    </em>
-                                 </p>
+                                 390                                                         
+                                 <p Class="text-muted small"><em>Little sour & dry                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Spicytiny                           
-                                 <p Class="text-muted small"><em>Vodka, Indian Spice, Dash Of Chilly Sauce                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Spicytiny                                                         
+                                 <p Class="text-muted small"><em>Vodka, Indian Spice, Dash Of Chilly Sauce                                                         </em></p>
                               </td>
                               <td>
-                                 210                           
-                                 <p Class="text-muted small"><em>Spicy                           
-                                    </em>
-                                 </p>
+                                 210                                                         
+                                 <p Class="text-muted small"><em>Spicy                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>Tequila</td>
+                              <td Class=" text-center" colspan=2>Tequila</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Agave Cola                           
-                                 <p Class="text-muted small"><em>Tequila, Lemon Wedge & Coke                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Agave Cola                                                         
+                                 <p Class="text-muted small"><em>Tequila, Lemon Wedge & Coke                                                         </em></p>
                               </td>
                               <td>
-                                 420                           
-                                 <p Class="text-muted small"><em>Sweet                           
-                                    </em>
-                                 </p>
+                                 420                                                         
+                                 <p Class="text-muted small"><em>Sweet                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Fizzy Babaloush                           
-                                 <p Class="text-muted small"><em>Tequila, Grape Juice, Tonic Water                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Fizzy Babaloush                                                         
+                                 <p Class="text-muted small"><em>Tequila, Grape Juice, Tonic Water                                                         </em></p>
                               </td>
                               <td>
-                                 490                           
-                                 <p Class="text-muted small"><em>Dry sour                           
-                                    </em>
-                                 </p>
+                                 490                                                         
+                                 <p Class="text-muted small"><em>Dry sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Mexican Colada                           
-                                 <p Class="text-muted small"><em>Tequila, Blue Curacao, Pineapple Juice & Coconut Powder                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Mexican Colada                                                         
+                                 <p Class="text-muted small"><em>Tequila, Blue Curacao, Pineapple Juice & Coconut Powder                                                         </em></p>
                               </td>
                               <td>
-                                 420                           
-                                 <p Class="text-muted small"><em>Sweet & strong                           
-                                    </em>
-                                 </p>
+                                 420                                                         
+                                 <p Class="text-muted small"><em>Sweet & strong                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Black Dreamer                           
-                                 <p Class="text-muted small"><em>Tequila & Coffee                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Black Dreamer                                                         
+                                 <p Class="text-muted small"><em>Tequila & Coffee                                                         </em></p>
                               </td>
                               <td>
-                                 410                           
-                                 <p Class="text-muted small"><em>Dark coffee                           
-                                    </em>
-                                 </p>
+                                 410                                                         
+                                 <p Class="text-muted small"><em>Dark coffee                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Mexican                           
-                                 <p Class="text-muted small"><em>Tequila, Grape Juice, Grenadine                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Mexican                                                         
+                                 <p Class="text-muted small"><em>Tequila, Grape Juice, Grenadine                                                         </em></p>
                               </td>
                               <td>
-                                 440                           
-                                 <p Class="text-muted small"><em>Sweet & dry                           
-                                    </em>
-                                 </p>
-                              </td>
-                           </tr>
-						   <tr>
-                              <td Class="text-primary text-center" colspan=2>Liquor Based</td>
-                           </tr>
-                           <tr>
-                              <td Class="text-primary">
-                                 Jagemeister                           
-                                 <p Class="text-muted small"><em><footer class="blockquote-footer small text-center">
-                                 Bartender's Special                           
-                                 </footer>                           
-                                    </em>
-                                 </p>
-                              </td>
-                              <td>
-                                 450                           
-                              </td>
-                           </tr>
-						   <tr>
-                              <td Class="text-primary">
-                                 Ti Connie Coffee Liquor                           
-                                 <p Class="text-muted small"><em><footer class="blockquote-footer small text-center">
-                                 Bartender's Special                           
-                                 </footer>                           
-                                    </em>
-                                 </p>
-                              </td>
-                              <td>
-                                 290                           
-                              </td>
-                           </tr>
-						   <tr>
-                              <td Class="text-primary">
-                                 Ti Connie Sambucca                           
-                                 <p Class="text-muted small"><em><footer class="blockquote-footer small text-center">
-                                 Bartender's Special                           
-                                 </footer>                           
-                                    </em>
-                                 </p>
-                              </td>
-                              <td>
-                                 360                           
-                              </td>
-                           </tr>
-						   <tr>
-                              <td Class="text-primary">
-                                 Ti Connie Triple Sec                           
-                              </td>
-                              <td>
-                                 290                           
+                                 440                                                         
+                                 <p Class="text-muted small"><em>Sweet & dry                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>GIN</td>
+                              <td Class=" text-center" colspan=2>GIN</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Giver                           
-                                 <p Class="text-muted small"><em>Gin, Sweet Vermouth                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Giver                                                         
+                                 <p Class="text-muted small"><em>Gin, Sweet Vermouth                                                         </em></p>
                               </td>
                               <td>
-                                 290                           
-                                 <p Class="text-muted small"><em>Sweetish dry                           
-                                    </em>
-                                 </p>
+                                 290                                                         
+                                 <p Class="text-muted small"><em>Sweetish dry                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Elevated Soul Lemon                           
-                                 <p Class="text-muted small"><em>Gin & Energy Drink With Lime Slice                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Elevated Soul Lemon                                                         
+                                 <p Class="text-muted small"><em>Gin & Energy Drink With Lime Slice                                                         </em></p>
                               </td>
                               <td>
-                                 340                           
-                                 <p Class="text-muted small"><em>Energetic                           
-                                    </em>
-                                 </p>
+                                 340                                                         
+                                 <p Class="text-muted small"><em>Energetic                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Jalsa                           
-                                 <p Class="text-muted small"><em>Gin, Vodka, Sweet Vermouth & Lemonade                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Jalsa                                                         
+                                 <p Class="text-muted small"><em>Gin, Vodka, Sweet Vermouth & Lemonade                                                         </em></p>
                               </td>
                               <td>
-                                 320                           
-                                 <p Class="text-muted small"><em>Sweet & strong                           
-                                    </em>
-                                 </p>
+                                 320                                                         
+                                 <p Class="text-muted small"><em>Sweet & strong                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Ginner Rock                           
-                                 <p Class="text-muted small"><em>Gin, vodka, lemon juice & tonic water                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Ginner Rock                                                         
+                                 <p Class="text-muted small"><em>Gin, vodka, lemon juice & tonic water                                                         </em></p>
                               </td>
                               <td>
-                                 340                           
-                                 <p Class="text-muted small"><em>Sour                           
-                                    </em>
-                                 </p>
+                                 340                                                         
+                                 <p Class="text-muted small"><em>Sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Sweet Lady                           
-                                 <p Class="text-muted small"><em>Gin, Orange Juice, Almond Syrup & Grenoline & Lemonade                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Sweet Lady                                                         
+                                 <p Class="text-muted small"><em>Gin, Orange Juice, Almond Syrup & Grenoline & Lemonade                                                         </em></p>
                               </td>
                               <td>
-                                 290                           
-                                 <p Class="text-muted small"><em>Sweet & sour                           
-                                    </em>
-                                 </p>
+                                 290                                                         
+                                 <p Class="text-muted small"><em>Sweet & sour                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>LONG DRINKS</td>
+                              <td Class=" text-center" colspan=2>LONG DRINKS</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Energetic Jalsa                           
-                                 <p Class="text-muted small"><em>Vodka, Gin, Whisky, White Rum, Dark Rum, Spicy Lemonade Syrup, Top It Up With Lemonade                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Energetic Jalsa                                                         
+                                 <p Class="text-muted small"><em>Vodka, Gin, Whisky, White Rum, Dark Rum, Spicy Lemonade Syrup, Top It Up With Lemonade                                                         </em></p>
                               </td>
                               <td>
-                                 540                           
-                                 <p Class="text-muted small"><em>Spicy & strong                           
-                                    </em>
-                                 </p>
+                                 540                                                         
+                                 <p Class="text-muted small"><em>Spicy & strong                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Bunny da Iced Tea                           
-                                 <p Class="text-muted small"><em>Vodka, Gin, White Rum, Whisky, Tequila, Grenadine Syrup, Craneberry Juice, Black Salt                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Bunny da Iced Tea                                                         
+                                 <p Class="text-muted small"><em>Vodka, Gin, White Rum, Whisky, Tequila, Grenadine Syrup, Craneberry Juice, Black Salt                                                         </em></p>
                               </td>
                               <td>
-                                 530                           
-                                 <p Class="text-muted small"><em>Sour & dry                           
-                                    </em>
-                                 </p>
+                                 530                                                         
+                                 <p Class="text-muted small"><em>Sour & dry                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Blue Frog                           
-                                 <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Blue Curacao, Strongest Energy Energy Drink                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Blue Frog                                                         
+                                 <p Class="text-muted small"><em>Gin, Vodka, White Rum, Tequila, Blue Curacao, Strongest Energy Energy Drink                                                         </em></p>
                               </td>
                               <td>                           540                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Kala Khatta Iced Tea                           
-                                 <p Class="text-muted small"><em>Gin, Vodka, White Rum, Whisky, Dark Rum , Kala khatta syrup, chat masala, top it up with cola                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Kala Khatta Iced Tea                                                         
+                                 <p Class="text-muted small"><em>Gin, Vodka, White Rum, Whisky, Dark Rum , Kala khatta syrup, chat masala, top it up with cola                                                         </em></p>
                               </td>
                               <td>
-                                 530                           
-                                 <p Class="text-muted small"><em>Strong                           
-                                    </em>
-                                 </p>
+                                 530                                                         
+                                 <p Class="text-muted small"><em>Strong                                                         </em></p>
                               </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Summer Iced Tea                           
-                                 <p Class="text-muted small"><em>Gin, Vodka, Whisky, White Rum, Kokum Syrup, Chat Masala Top It Up With Sparkling Water                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Summer Iced Tea                                                         
+                                 <p Class="text-muted small"><em>Gin, Vodka, Whisky, White Rum, Kokum Syrup, Chat Masala Top It Up With Sparkling Water                                                         </em></p>
                               </td>
                               <td>                           490                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary text-center" colspan=2>SHOTS</td>
+                              <td Class=" text-center" colspan=2>SHOTS</td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Jager Bomb                           
-                                 <p Class="text-muted small"><em>Jagermeiser & Energy Drink                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Jager Bomb                                                         
+                                 <p Class="text-muted small"><em>Jagermeiser & Energy Drink                                                         </em></p>
                               </td>
                               <td>                           490                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Paan Shot                           
-                                 <p Class="text-muted small"><em>Gin & Vodka, Paan Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Paan Shot                                                         
+                                 <p Class="text-muted small"><em>Gin & Vodka, Paan Syrup                                                         </em></p>
                               </td>
                               <td>                           390                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 B-52                           
-                                 <p Class="text-muted small"><em>Kahlua, Baileys, Orange Liquor                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 B-52                                                         
+                                 <p Class="text-muted small"><em>Kahlua, Baileys, Orange Liquor                                                         </em></p>
                               </td>
                               <td>                           440                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Flaming Shot                           
-                                 <p Class="text-muted small"><em>Sambuca, Dark Rum                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Flaming Shot                                                         
+                                 <p Class="text-muted small"><em>Sambuca, Dark Rum                                                         </em></p>
                               </td>
                               <td>                           440                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Jalsa Shot                           
+                              <td Class="">
+                                 Jalsa Shot                                                         
                                  <p Class="text-muted small">
                                     <em>
-                                       O3 Flavored Shots Made With Vodka, Gin & White Rum                           
-                                 <footer class="blockquote-footer small text-center">
-                                 Bartender's Special                           
-                                 </footer>
-                                 </em></p>                       
+                                       O3 Flavored Shots Made With Vodka, Gin & White Rum                                                         
+                                 <footer class="blockquote-footer small text-center">                              Bartender's Special                                                         </footer>                              </em></p>                                                  
                               </td>
                               <td>                           490                        </td>
                            </tr>
@@ -2029,101 +1807,79 @@
                      <table class="table">
                         <tbody>
                            <tr>
-                              <td Class="text-primary">
-                                 Citron sangria                           
-                                 <p Class="text-muted small"><em>Grape & Orange Juice With Chopped Apple                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Citron sangria                                                         
+                                 <p Class="text-muted small"><em>Grape & Orange Juice With Chopped Apple                                                         </em></p>
                               </td>
                               <td>                           190                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Refreshing king                           
-                                 <p Class="text-muted small"><em>Mango Juice, Mint Leafs, Fresh Cream & Sugar Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Refreshing king                                                         
+                                 <p Class="text-muted small"><em>Mango Juice, Mint Leafs, Fresh Cream & Sugar Syrup                                                         </em></p>
                               </td>
                               <td>                           140                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Chatpata Anar                           
-                                 <p Class="text-muted small"><em>Pomegranate Juice, Orange Juice With Chat Masala                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Chatpata Anar                                                         
+                                 <p Class="text-muted small"><em>Pomegranate Juice, Orange Juice With Chat Masala                                                         </em></p>
                               </td>
                               <td>                           190                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Guava smash                           
-                                 <p Class="text-muted small"><em>Guava Juice, Chilly Sauce, Black Pepper, S & S Mix                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Guava smash                                                         
+                                 <p Class="text-muted small"><em>Guava Juice, Chilly Sauce, Black Pepper, S & S Mix                                                         </em></p>
                               </td>
                               <td>                           170                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Blend lime                           
-                                 <p Class="text-muted small"><em>Mint Leafs, Lime Juice, Sparkling Water, Sugar Syrup                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Blend lime                                                         
+                                 <p Class="text-muted small"><em>Mint Leafs, Lime Juice, Sparkling Water, Sugar Syrup                                                         </em></p>
                               </td>
                               <td>                           140                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Red island                           
-                                 <p Class="text-muted small"><em>Lemonade, Grenadine, Cherry                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Red island                                                         
+                                 <p Class="text-muted small"><em>Lemonade, Grenadine, Cherry                                                         </em></p>
                               </td>
                               <td>                           140                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Kiwi Garden                           
-                                 <p Class="text-muted small"><em>Kiwi Crush, Fresh Kiwi, Sparkling Water, Chat Masala                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Kiwi Garden                                                         
+                                 <p Class="text-muted small"><em>Kiwi Crush, Fresh Kiwi, Sparkling Water, Chat Masala                                                         </em></p>
                               </td>
                               <td>                           140                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 5 Elements                           
-                                 <p Class="text-muted small"><em>Mint, Lime Juice, Pomegranate Seeds, Sugar Syrup, Sparkling Water                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 5 Elements                                                         
+                                 <p Class="text-muted small"><em>Mint, Lime Juice, Pomegranate Seeds, Sugar Syrup, Sparkling Water                                                         </em></p>
                               </td>
                               <td>                           190                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Orange Strawberry Splitzer                           
-                                 <p Class="text-muted small"><em>Orange Juice, Strawberry Crush, Sparkling Water                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Orange Strawberry Splitzer                                                         
+                                 <p Class="text-muted small"><em>Orange Juice, Strawberry Crush, Sparkling Water                                                         </em></p>
                               </td>
                               <td>                           140                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Iced Tea                           
-                                 <p Class="text-muted small"><em>Lemon Or Peach                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Iced Tea                                                         
+                                 <p Class="text-muted small"><em>Lemon Or Peach                                                         </em></p>
                               </td>
                               <td>                           140                        </td>
                            </tr>
                            <tr>
-                              <td Class="text-primary">
-                                 Iced Coffee                           
-                                 <p Class="text-muted small"><em>Espresso Or Irish Cream With Milk                           
-                                    </em>
-                                 </p>
+                              <td Class="">
+                                 Iced Coffee                                                         
+                                 <p Class="text-muted small"><em>Espresso Or Irish Cream With Milk                                                         </em></p>
                               </td>
                               <td>                           190                        </td>
                            </tr>
@@ -2134,7 +1890,7 @@
             </div>
             <a class="section" id="Cigarette"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Cigarette-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cigarette-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cigarette.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Cigarette">Cigarette</a>      </button>    </h2>
+               <h2 class="accordion-header" id="Cigarette-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cigarette-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cigarette.jpg" class="rounded-circle border border-primary img-circle-small" alt="Cigarette"></img><a id="Cigarette">Cigarette</a>      </button>    </h2>
                <div id="Cigarette-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Cigarette-heading">
                   <div class="accordion-body">
                      <table class="table">
@@ -2184,11 +1940,6 @@
                               <td>20</td>
                               <td>180</td>
                            </tr>
-						   <tr>
-                              <td>Gold Flake Light Mini</td>
-                              <td>25</td>
-                              <td>100</td>
-                           </tr>
                            <tr>
                               <td>Marlbro Advance</td>
                               <td>25</td>
@@ -2214,10 +1965,15 @@
                               <td>20</td>
                               <td>100</td>
                            </tr>
-						   <tr>
+                           <tr>
                               <td>Esse Lights</td>
                               <td>10</td>
                               <td>180</td>
+                           </tr>
+                           <tr>
+                              <td>Goldflake Light Mini</td>
+                              <td>20</td>
+                              <td>100</td>
                            </tr>
                         </tbody>
                      </table>
@@ -2226,8 +1982,8 @@
             </div>
             <a class="section" id="Appetizers"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Appetizers-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Appetizers-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Appetizers.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Appetizers">Appetizers</a>      </button>    </h2>
-               <div id="Appetizers-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Appetizers-heading">
+               <h2 class="accordion-header" id="Appetizers-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Appetizers-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Appetizers.jpg" class="rounded-circle border border-primary img-circle-small" alt="Appetizers"></img><a id="Appetizers">Appetizers</a>      </button>    </h2>
+               <div id="Appetizers-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Appetizers-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -2550,6 +2306,10 @@
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Crispy</td>
                               <td style="text-align:center">280</td>
                            </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chi Purandar Kabab</td>
+                              <td style="text-align:center">560</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -2557,8 +2317,8 @@
             </div>
             <a class="section" id="MainCourse"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="MainCourse-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MainCourse-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/MainCourse.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="MainCourse">Main Course</a>      </button>    </h2>
-               <div id="MainCourse-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="MainCourse-heading">
+               <h2 class="accordion-header" id="MainCourse-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MainCourse-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/MainCourse.jpg" class="rounded-circle border border-primary img-circle-small" alt="MainCourse"></img><a id="MainCourse">Main Course</a>      </button>    </h2>
+               <div id="MainCourse-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="MainCourse-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -2775,17 +2535,9 @@
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Tawa</td>
                               <td style="text-align:center">240</td>
                            </tr>
-						   <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Rampuri</td>
-                              <td style="text-align:center">380 | 700</td>
-                           </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Mutton Masala</td>
                               <td style="text-align:center">430</td>
-                           </tr>
-						   <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Mutton Kheema Masala</td>
-                              <td style="text-align:center">650</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Mutton Rara Masala</td>
@@ -2814,6 +2566,14 @@
                            <tr>
                               <td><img src="Sources/Images/egg.png" class="nonveg"  alt="egg"/>Egg Curry</td>
                               <td style="text-align:center">210</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Non Veg Grevy</td>
+                              <td style="text-align:center">150</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Veg Grevy</td>
+                              <td style="text-align:center">120</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Masala</td>
@@ -2869,10 +2629,6 @@
                                  <p class="hideentag">Chef</p>
                               </td>
                               <td style="text-align:center">380 | 700</td>
-                           </tr>
-                           <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Badshah</td>
-                              <td style="text-align:center">310</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Tarriwala Handi</td>
@@ -2943,7 +2699,7 @@
                               <td style="text-align:center">280</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Andaa Junction</td>
+                              <td><img src="Sources/Images/egg.png" class="nonveg"  alt="egg"/>Andaa Junction</td>
                               <td style="text-align:center">220</td>
                            </tr>
                            <tr>
@@ -2969,10 +2725,6 @@
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Malvani Boneless</td>
                               <td style="text-align:center">360 | 700</td>
-                           </tr>
-                           <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Tawa Pulao</td>
-                              <td style="text-align:center">280</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Prawns Masala</td>
@@ -3046,6 +2798,18 @@
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Mutton Kheema Masala</td>
                               <td style="text-align:center">650</td>
                            </tr>
+                           <tr>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Palak Khichadi</td>
+                              <td style="text-align:center">220</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Rampuri</td>
+                              <td style="text-align:center">380 | 700</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Lalpari</td>
+                              <td style="text-align:center">360</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -3053,19 +2817,11 @@
             </div>
             <a class="section" id="Starters"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Starters-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Starters-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Starters.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Starters">Starters</a>      </button>    </h2>
-               <div id="Starters-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Starters-heading">
+               <h2 class="accordion-header" id="Starters-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Starters-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Starters.jpg" class="rounded-circle border border-primary img-circle-small" alt="Starters"></img><a id="Starters">Starters</a>      </button>    </h2>
+               <div id="Starters-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Starters-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
-                           <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Bread Butter</td>
-                              <td style="text-align:center">60</td>
-                           </tr>
-                           <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Bread Butter Jam</td>
-                              <td style="text-align:center">60</td>
-                           </tr>
                            <tr>
                               <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Plain Cheese</td>
                               <td style="text-align:center">100</td>
@@ -3078,7 +2834,6 @@
                               <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Dum Tikka</td>
                               <td style="text-align:center">280</td>
                            </tr>
-                          
                            <tr>
                               <td>
                                  <img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Tandoori Lolypop<img src="Sources/Images/ChefHat.jpg" class="nonveg" alt="Chef">
@@ -3102,13 +2857,6 @@
                               <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Kasturi Kabab</td>
                               <td style="text-align:center">270</td>
                            </tr>
-						   <tr>
-                              <td>
-                                 <img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Cotton Kabab<img src="Sources/Images/ChefHat.jpg" class="nonveg" alt="Chef">
-                                 <p class="hideentag">Chef</p>
-                              </td>
-                              <td style="text-align:center">350</td>
-                           </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Afgani</td>
                               <td style="text-align:center">330</td>
@@ -3127,19 +2875,11 @@
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Surmai Tandoori</td>
-                              <td style="text-align:center">550</td>
-                           </tr>
-						   <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Baby Surmai 2in1</td>
-                              <td style="text-align:center">550</td>
+                              <td style="text-align:center">450</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Bangda Fry</td>
                               <td style="text-align:center">240</td>
-                           </tr>
-                           <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Single Bangda</td>
-                              <td style="text-align:center">140</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Hirani Kabab</td>
@@ -3169,10 +2909,6 @@
                               <td style="text-align:center">330</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Masala Pnuts</td>
-                              <td style="text-align:center">90</td>
-                           </tr>
-                           <tr>
                               <td>
                                  <img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Jungli Kabab<img src="Sources/Images/ChefHat.jpg" class="nonveg" alt="Chef">
                                  <p class="hideentag">Chef</p>
@@ -3191,8 +2927,8 @@
                               <td style="text-align:center">320</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Surmai Fry Single</td>
-                              <td style="text-align:center">220</td>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Badshah</td>
+                              <td style="text-align:center">310</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Gulabi Seekh Kabab</td>
@@ -3201,10 +2937,6 @@
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Tandoor Hyderabadi</td>
                               <td style="text-align:center">360 | 600</td>
-                           </tr>
-                           <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Butter Lachha</td>
-                              <td style="text-align:center">70</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Fry</td>
@@ -3229,14 +2961,6 @@
                            <tr>
                               <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Fire Chingari</td>
                               <td style="text-align:center">380</td>
-                           </tr>
-						   <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Prawns Chili</td>
-                              <td style="text-align:center">320</td>
-                           </tr>
-						   <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Prawns 65</td>
-                              <td style="text-align:center">320</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Prawns Koliwada</td>
@@ -3285,6 +3009,30 @@
                               <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Blackbean Sauce</td>
                               <td style="text-align:center">310</td>
                            </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Baby Surmai 2in1</td>
+                              <td style="text-align:center">480</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Prawns 65</td>
+                              <td style="text-align:center">320</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Prawns Chilli</td>
+                              <td style="text-align:center">320</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Cotton Kabab</td>
+                              <td style="text-align:center">350</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Bhel</td>
+                              <td style="text-align:center">60</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Tandoori Prawns</td>
+                              <td style="text-align:center">360</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -3292,8 +3040,8 @@
             </div>
             <a class="section" id="Biryani"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Biryani-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Biryani-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Biryani.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Biryani">Biryani</a>      </button>    </h2>
-               <div id="Biryani-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Biryani-heading">
+               <h2 class="accordion-header" id="Biryani-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Biryani-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Biryani.jpg" class="rounded-circle border border-primary img-circle-small" alt="Biryani"></img><a id="Biryani">Biryani</a>      </button>    </h2>
+               <div id="Biryani-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Biryani-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -3302,7 +3050,10 @@
                               <td style="text-align:center">220</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Matka Biryani</td>
+                              <td>
+                                 <img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Chicken Matka Biryani<img src="Sources/Images/ChefHat.jpg" class="nonveg" alt="Chef">
+                                 <p class="hideentag">Chef</p>
+                              </td>
                               <td style="text-align:center">340</td>
                            </tr>
                            <tr>
@@ -3342,7 +3093,10 @@
                               <td style="text-align:center">270</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Tandoori Biryani</td>
+                              <td>
+                                 <img src="Sources/Images/non-veg.png" class="nonveg"  alt="non-veg"/>Tandoori Biryani<img src="Sources/Images/ChefHat.jpg" class="nonveg" alt="Chef">
+                                 <p class="hideentag">Chef</p>
+                              </td>
                               <td style="text-align:center">450</td>
                            </tr>
                         </tbody>
@@ -3352,8 +3106,8 @@
             </div>
             <a class="section" id="Breads"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Breads-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Breads-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Breads.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Breads">Breads</a>      </button>    </h2>
-               <div id="Breads-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Breads-heading">
+               <h2 class="accordion-header" id="Breads-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Breads-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Breads.jpg" class="rounded-circle border border-primary img-circle-small" alt="Breads"></img><a id="Breads">Breads</a>      </button>    </h2>
+               <div id="Breads-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Breads-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -3442,12 +3196,20 @@
                               <td style="text-align:center">100</td>
                            </tr>
                            <tr>
+                              <td>Butter Lachha</td>
+                              <td style="text-align:center">70</td>
+                           </tr>
+                           <tr>
                               <td>Wheat Butter Naan</td>
                               <td style="text-align:center">60</td>
                            </tr>
                            <tr>
                               <td>Chicken Paratha</td>
                               <td style="text-align:center">180</td>
+                           </tr>
+                           <tr>
+                              <td>Paneer Cheese Paratha</td>
+                              <td style="text-align:center">140</td>
                            </tr>
                         </tbody>
                      </table>
@@ -3456,8 +3218,8 @@
             </div>
             <a class="section" id="Chinese"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Chinese-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Chinese-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Chinese.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Chinese">Chinese</a>      </button>    </h2>
-               <div id="Chinese-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Chinese-heading">
+               <h2 class="accordion-header" id="Chinese-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Chinese-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Chinese.jpg" class="rounded-circle border border-primary img-circle-small" alt="Chinese"></img><a id="Chinese">Chinese</a>      </button>    </h2>
+               <div id="Chinese-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Chinese-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -3552,8 +3314,8 @@
             </div>
             <a class="section" id="Rice"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Rice-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rice-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rice.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Rice">Rice</a>      </button>    </h2>
-               <div id="Rice-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Rice-heading">
+               <h2 class="accordion-header" id="Rice-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rice-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rice.jpg" class="rounded-circle border border-primary img-circle-small" alt="Rice"></img><a id="Rice">Rice</a>      </button>    </h2>
+               <div id="Rice-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Rice-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -3574,20 +3336,16 @@
                               <td style="text-align:center">210</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Dal Khichadi</td>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Dal Khichdi</td>
                               <td style="text-align:center">200</td>
-                           </tr>
-						   <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Palak Khichadi</td>
-                              <td style="text-align:center">220</td>
                            </tr>
                            <tr>
                               <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Curd Rice</td>
                               <td style="text-align:center">180</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Veg Toofani Rice</td>
-                              <td style="text-align:center">220</td>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Paneer Tawa Pulao</td>
+                              <td style="text-align:center">280</td>
                            </tr>
                         </tbody>
                      </table>
@@ -3596,11 +3354,19 @@
             </div>
             <a class="section" id="Sandwitch"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Sandwitch-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Sandwitch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Sandwitch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Sandwitch">Sandwitch</a>      </button>    </h2>
-               <div id="Sandwitch-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Sandwitch-heading">
+               <h2 class="accordion-header" id="Sandwitch-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Sandwitch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Sandwitch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Sandwitch"></img><a id="Sandwitch">Sandwitch</a>      </button>    </h2>
+               <div id="Sandwitch-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Sandwitch-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
+                           <tr>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Bread Butter</td>
+                              <td style="text-align:center">60</td>
+                           </tr>
+                           <tr>
+                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Bread Butter Jam</td>
+                              <td style="text-align:center">60</td>
+                           </tr>
                            <tr>
                               <td><img src="Sources/Images/egg.png" class="nonveg"  alt="egg"/>Egg Omelette Sandwitch</td>
                               <td style="text-align:center">110</td>
@@ -3622,10 +3388,6 @@
                               <td style="text-align:center">120</td>
                            </tr>
                            <tr>
-                              <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Cheese Chilli Toast</td>
-                              <td style="text-align:center">120</td>
-                           </tr>
-                           <tr>
                               <td><img src="Sources/Images/veg.png" class="nonveg"  alt="veg"/>Veg Sandwitch</td>
                               <td style="text-align:center">100</td>
                            </tr>
@@ -3636,8 +3398,8 @@
             </div>
             <a class="section" id="Egg"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Egg-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Egg-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Egg.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Egg">Egg</a>      </button>    </h2>
-               <div id="Egg-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Egg-heading">
+               <h2 class="accordion-header" id="Egg-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Egg-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Egg.jpg" class="rounded-circle border border-primary img-circle-small" alt="Egg"></img><a id="Egg">Egg</a>      </button>    </h2>
+               <div id="Egg-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Egg-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -3665,6 +3427,10 @@
                               <td><img src="Sources/Images/egg.png" class="nonveg"  alt="egg"/>Egg Oil Fry</td>
                               <td style="text-align:center">80</td>
                            </tr>
+                           <tr>
+                              <td><img src="Sources/Images/egg.png" class="nonveg"  alt="egg"/>Cheese Omlette</td>
+                              <td style="text-align:center">110</td>
+                           </tr>
                         </tbody>
                      </table>
                   </div>
@@ -3672,8 +3438,8 @@
             </div>
             <a class="section" id="Soup"></a>	   
             <div class="accordion-item mt-3">
-               <h2 class="accordion-header" id="Soup-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Soup-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Soup.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Soup">Soup</a>      </button>    </h2>
-               <div id="Soup-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Soup-heading">
+               <h2 class="accordion-header" id="Soup-heading">      <button class="accordion-button bg-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Soup-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Soup.jpg" class="rounded-circle border border-primary img-circle-small" alt="Soup"></img><a id="Soup">Soup</a>      </button>    </h2>
+               <div id="Soup-collapse" class="accordion-collapse collapse bg-warning  show" aria-labelledby="Soup-heading">
                   <div class="accordion-body">
                      <table class="table">
                         <tbody>
@@ -3714,7 +3480,7 @@
       </div>
    </body>
    <script>
-         var myModal = new bootstrap.Modal(document.getElementById('Offers'), {})
-         myModal.show()
-      </script>
+      var myModal = new bootstrap.Modal(document.getElementById('Offers'), {})
+      myModal.show()
+   </script>
 </html>
